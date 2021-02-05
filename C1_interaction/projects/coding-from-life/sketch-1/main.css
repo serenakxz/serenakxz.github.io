@@ -1,0 +1,353 @@
+/*
+  Coding from Life – Sketch 1: fixed layout
+
+  For sketch 1 you'll be positioning elements relative to an element with a fixed
+  width and height. For this sketch you can position elements by using pixel values.
+*/
+
+body {
+  background-color: black;
+}
+
+.frame {
+  width: 1000px;
+  height: 600px;
+  background: #791704;
+  margin: 30px auto;
+  position: relative;
+}
+
+
+
+/* Your CSS goes here */
+.tableright{
+ width: 500px;
+ height: 200px;
+ background: darkgreen;
+ position: absolute;
+ bottom: 0px;
+ right: 85px;
+ transform: skew(40deg);
+}
+
+.tablerleft{
+ width: 500px;
+ height: 200px;
+ background: darkgreen;
+ position: absolute;
+ bottom: 0px;
+}
+
+.pumpkin{
+  z-index: 2 ;	
+  display: block;
+  width: 180px;
+  height: 140px;
+  background-color: #FF7203;
+  border-radius: 50% 50% 50% 50% / 70% 70% 40% 40%;
+  position: absolute;;
+  bottom: 100px;
+  right: 170px;
+
+}
+ .pumpkintop {
+     background-color: #6b3b1a;
+    width: 20px;
+    height: 30px;
+    border-radius: 30%;
+    transform: rotate(15deg);
+    position: absolute;
+    bottom: 230px;
+    right: 245px;
+    z-index: 3
+    }
+
+.pumpkintexture1{
+    border: 2px solid brown;
+    display: inline-block;
+    height:40px;
+    width:150px;
+    border-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    bottom: 150px;
+    right: 185px;
+    z-index: 3;
+    transform: rotate(90deg);
+}   
+
+
+.pumpkintexture2{
+    border: 2px solid brown;
+    display: inline-block;
+    height:80px;
+    width:150px;
+    border-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    bottom: 130px;
+    right: 185px;
+    z-index: 3;
+    transform: rotate(90deg);
+}   
+
+.pumpkintexture3{
+    border: 2px solid brown;
+    display: inline-block;
+    height:120px;
+    width:150px;
+    border-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    bottom: 110px;
+    right: 185px;
+    z-index: 3;
+    transform: rotate(90deg);
+}   
+.pumpkintexture4{
+    border: 2px solid brown;
+    display: inline-block;
+    height:150px;
+    width:140px;
+    border-radius: 50%;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    bottom: 90px;
+    right: 190px;
+    z-index: 3;
+    transform: rotate(90deg);
+}  
+.vasebottom{
+	position: absolute;
+    border-bottom: 40px solid #FFEF66;
+    border-left: 40px solid transparent;
+    border-right:40px solid transparent;
+    height: 0px;
+    width: 30px;
+    right: 500px;
+    bottom: 150px;
+    z-index: 1;
+
+}
+.vaseneck{
+	position: absolute;
+    width: 30px;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid #F1A62A;
+    right: 500px;
+    bottom: 190px;
+    z-index: 1;
+}
+
+.vasetop{
+    position: absolute;
+    width: 110px;
+    height: 250px;
+    right: 500px;
+    bottom: 227px;
+    background-color: #FFEF66;
+    z-index: 2;
+}
+
+.flower1{
+	width: 60px;
+    height: 50px;
+    background: #FF4F64;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    right: 400px;
+    transform: rotate(20deg);
+    z-index: 2;
+}
+
+.flower2{
+	width: 50px;
+    height: 50px;
+    background: #FF4F64;
+    border-radius: 40%;
+    position: absolute;
+    top: 0px;
+    right: 500px;
+    transform: rotate(170deg);
+    z-index: 2;
+}
+
+.flower3{
+	width: 60px;
+    height: 50px;
+    background: #FF4F64;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 540px;
+    transform: rotate(30deg);
+    z-index: 2;
+}
+
+.flower4{
+	width: 60px;
+    height: 40px;
+    background: #FF4F64;
+    border-radius: 50%;
+    position: absolute;
+    top: 45px;
+    right: 460px;
+    transform: rotate(80deg);
+    z-index: 2;
+}
+
+.stem1{
+	width: 10px;
+    height: 200px;
+    background:#7CD53F;
+    position: absolute;
+    top: 50px;
+    right: 560px;
+    z-index: 1;
+}
+
+.stem2{
+	width: 10px;
+    height: 200px;
+    background: #7CD53F;
+    position: absolute;
+    transform: rotate(15deg);
+    top: 40px;
+    right: 545px;
+    z-index: 1;
+}
+
+.stem3{
+	width: 10px;
+    height: 200px;
+    background: #7CD53F;
+    position: absolute;
+    transform: rotate(30deg);
+    top: 60px;
+    right: 540px;
+    z-index: 1;
+}
+
+.stem4{
+	width: 10px;
+    height: 200px;
+    background: #7CD53F;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 20px;
+    right: 500px;
+    z-index: 1;
+}
+
+.leaf{
+     width: 66px;
+     height: 180px;
+     background: #3C8907;
+     border-radius: 50% 50% 50% 50% / 20% 20% 40% 40%;
+     position: absolute;
+     top:0px;
+     right: 558px;
+     z-index: 0;
+     transform: rotate(150deg);
+	}
+
+.candlebottom{
+	position: absolute;
+    width: 100px;
+    height: 10px;
+    bottom: 150px;
+    right: 320px;
+    background-color: #F1A62A;
+    z-index: 1;
+}
+
+.candlepole{
+	position: absolute;
+    width: 5px;
+    height: 230px;
+    bottom: 150px;
+    right: 370px;
+    background-color: #F1A62A;
+    z-index: 1;
+}
+
+.candlesupport{
+	position: absolute;
+    width:30px;
+    height: 60px;
+    bottom:380px;
+    right: 358px;
+    background-image: linear-gradient(to right,#FFEF66, white, #F1A62A);
+}
+
+.candlelong{
+	position: absolute;
+    width:20px;
+    height: 120px;
+    bottom:440px;
+    right: 363px;
+    background-color: white;
+}
+
+.candlewick {
+    position: absolute;
+    width: 3px;
+    height: 9px;
+    bottom: 560px;
+    right:371px;
+    background-color: #F1A62A;
+}
+
+.candlebottom2{
+	position: absolute;
+    width: 120px;
+    height: 15px;
+    bottom: 100px;
+    right: 650px;
+    background-color: #F1A62A;
+    z-index: 1;
+}
+
+.candlepole2{
+	position: absolute;
+    width: 8px;
+    height: 150px;
+    bottom: 115px;
+    right: 705px;
+    background-color: #F1A62A;
+    z-index: 1;
+}
+
+.candlesupport2{
+	position: absolute;
+    width:40px;
+    height: 80px;
+    bottom: 265px;
+    right: 690px;
+    background-image: linear-gradient(to right,#FFEF66, white, #F1A62A);
+}
+
+.candleshort{
+	position: absolute;
+    width:30px;
+    height: 70px;
+    bottom:345px;
+    right: 695px;
+    background-color: white;
+}
+
+.candlewick2 {
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    bottom: 415px;
+    right:708px;
+    background-color: #F1A62A;
+}

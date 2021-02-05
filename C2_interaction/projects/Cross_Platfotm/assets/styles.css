@@ -1,0 +1,81 @@
+body {
+    background-image: url(bg.jpg);
+    margin: 5%;
+  }
+
+@font-face {
+    font-family:Nebula;
+    src: url('nebula-regular.otf');
+    src: url('nebula-regular-webfont.woff2') format('woff2'),
+         url('nebula-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family:Ticketing;
+  src: url('ticketing.regular.ttf');
+  src: url('ticketing.regular-webfont.woff2') format('woff2'),
+       url('ticketing.regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+  
+h1 {
+  font-family: Nebula;
+  font-size: 7em;
+  color: #B8E8FF;
+  text-shadow: 0.05em 0.05em #FF40E8;
+}
+
+.headline{
+  display: flex;
+}
+
+
+.id_bg{
+position: absolute;
+width: 50%;
+height: 50%;
+left: 40%;
+top: 40%;
+background: rgba(0, 0, 0, 0.54);
+border: 8px solid #047EC8;
+box-shadow: 0.1em 0.1em #FF40E8;
+}
+
+.id_pic{
+padding: 10%;
+}
+
+img{
+  width: 90%;
+  height: auto;
+}
+
+p {
+  padding-top: 7%;
+  margin-right: 6%;
+  font-size: 2.2em;
+  color: #B8E8FF;
+  font-family: Ticketing; 
+  transition: all 0.8s ease;
+}
+
+.contents{
+  display: flex;
+}
+
+a{
+  background: -webkit-linear-gradient(#FF40E8, #ff5151);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.4vw;
+}
+
+a:hover { 
+  background: -webkit-radial-gradient(#40ff00, #7d81ff, #00ed8a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}

@@ -1,0 +1,254 @@
+
+
+.tabs{
+position: relative;;
+width: 100vw;
+height: 1vw;
+left: 0px;
+top:0px;
+z-index: 1;
+}
+.ticket {
+    font-family: Arial;
+    font-size: 1vw;
+    font-weight: bold;
+    position: relative !important;
+    background: #F2C94C;
+    float: left;
+    top: 0px;
+    padding: 0.5vw 0.2vw;
+    margin: 0 0.7vw 0.7vw 0;
+    z-index: 2;
+}
+
+.ticket:after {
+    content: "";
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    border-right: black 0.5vw solid;
+    border-bottom: black 0.5vw solid;
+    -moz-border-radius: 0 0 1.4vw 0;
+    -webkit-border-radius: 0 0 1.4vw 0;
+    border-radius: 0 0 1.4vw 0;
+}
+ 
+.ticket:before {
+    content: "";
+    position: absolute !important;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    border-left: black 0.5vw solid;
+    border-bottom: black 0.5vw solid;
+    -moz-border-radius: 0 0 0 1.4vw;
+    -webkit-border-radius: 0 0 0 1.4vw;
+    border-radius: 0 0 0 1.4vw;
+}
+
+.ticket a {
+    padding: 0.2vw 1vw 0.2vw 1vw;
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+}
+ 
+.ticket a:hover {color: rgba(0,0,0,0.5);}
+
+.ticket a:after {
+    content: "";
+    position: absolute !important;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    border-right: black 0.5vw solid;
+    border-top: black 0.5vw solid;
+
+    border-radius: 0 1.4vw 0 0;
+}
+ 
+.ticket a:before {
+    content: "";
+    position: absolute !important;
+    z-index: 1000;
+    bottom: 0;
+    right: 0;
+    border-left: black 0.5vw solid;
+    border-top: black 0.5vw solid;
+   
+    border-radius: 1.4vw 0 0 0;
+}
+
+
+.dropbtn {
+  
+  color: black;
+  border: none;
+  padding: 0vw 1vw 0vw 1vw;
+  text-decoration: none;
+  white-space: nowrap;   
+   
+   
+}
+
+.dropbtn:after{
+  content: "";
+    position: absolute !important;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    border-right: black 0.5vw solid;
+    border-top: black 0.5vw solid;
+
+    border-radius: 0 1.4vw 0 0;
+}
+.dropbtn:before {
+    content: "";
+    position: absolute !important;
+    z-index: 1000;
+    bottom: 0;
+    right: 0;
+    border-left: black 0.5vw solid;
+    border-top: black 0.5vw solid;
+    -moz-border-radius: 1.4vw 0 0 0;
+    -webkit-border-radius: 1.4vw 0 0 0;
+    border-radius: 1.4vw 0 0 0;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color:  #F2C94C;
+  padding:1vw 1vw;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+    color:  black;
+    background-color: white;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {color: rgba(0,0,0,0.5);}
+
+.bg1{
+position: absolute;
+width: 20vw;
+height: 7vw;
+left: 1vw;
+top: 3.5vw;
+z-index: 0;
+}
+
+.bg1 a {
+    text-decoration: none;
+    color: #F2C94C;
+}
+
+.bg1 a:hover {
+    color:red;
+}
+
+
+h1 {
+  position: relative;
+  top: 0vw;
+  font-size: 2.5vw;
+  font-weight: bold;
+  text-align: left;
+  color: #F2C94C;
+  font-family: 'LatinCG';
+
+}
+
+.Mticket {
+    backface-visibility: hidden;
+    top: 13.5vw;
+    left:0vw;
+    margin-top: 0;
+    margin-left: 0;
+    position: absolute;
+    display: inline-block;
+    padding: 3vw 6vw;
+    background-image:
+        radial-gradient( ellipse closest-side at 50%  50%, black, transparent 90%),
+        radial-gradient( circle at 0    100%, black 5vw, darkgray 5.4vw),
+        radial-gradient( circle at 100% 100%, black 5vw, darkgray 5.4vw),
+        radial-gradient( circle at 100% 0, black 5vw, darkgray 5.4vw),
+        radial-gradient( circle at 0    0, black 5vw, darkgray 5.4vw);
+    background-position: center center, bottom left, bottom right, top right, top left;
+    background-position: center center, bottom left, bottom right, top right, top left;
+    background-size: cover, 51% 51%, 51% 51%, 51% 51%, 51% 51%;
+    background-repeat: no-repeat;
+    border-width: 0 0.3vw;
+    border-color: transparent;
+    border-style: solid;
+}
+
+
+.Mticket > div {
+    width: 88vw;
+    height: 36vw;
+    box-sizing: border-box;
+    position:relative;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.3vw;
+    border-radius:0.5vw;
+    background: black;
+}
+
+.Mticket > div:before,
+.Mticket > div:after {
+    content: attr(data-date);
+    font: 4.8vw 'Gill Sans';
+    color: darkgray;
+    position: absolute;
+    width: 35.5vw;
+    line-height: 7vw;
+    transform: rotate(90deg) translateZ(0) ;
+    transform-origin: 0% 0%;
+    text-align:center;
+    display: block;   
+    top: 0;
+    border-color: darkgray;
+    border-style: solid;
+    border-width: 0.3vw 0 0;
+
+}
+
+.Mticket > div:before {
+  left: 7vw;
+}
+.Mticket > div:after {
+	 content: attr(data-time);
+  transform-origin: 100% 0%;
+  right: 7vw;
+  transform: rotate(-90deg) translateZ(0);
+}
+
+.content{
+position: relative;
+width: 80vw;
+height: 30vw;
+left: 16vw;
+top: 2vw;
+font-family: "Ticketing";
+font-style: normal;
+font-weight: normal;
+font-size: 20vw;
+line-height: 16vw;
+/* or 100% */
+color: #F2C94C;
+z-index: 1;
+}
+

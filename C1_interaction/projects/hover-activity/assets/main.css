@@ -1,0 +1,92 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+ .description {
+ 	max-width: 1000px;
+  padding: 100px 30px;
+  margin: auto;
+  font-weight: 300;
+  font-size: 60px;
+}
+.description p{
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+.fillrect {
+  border: 1px solid black;
+  padding: 0 10px;
+  transition: all 0.5s ease;
+}
+
+.fillrect:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.gradient-fill {
+  background: -webkit-linear-gradient(black, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.8s ease;
+}
+
+.gradient-fill:hover {
+  background: -webkit-radial-gradient(black,white,red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.lips-cursor {
+  color: red;
+}
+
+.lips-cursor {
+  cursor: url(imgs/lips_cursor.png), auto;
+}
+
+.mainphoto
+{   height: 500px;
+	margin: 2.5vw auto;
+    position: relative;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  z-index: 1;
+}
+
+.mainphoto img {
+  display: block;
+  margin: 0 auto;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  padding: 60px 0 60px 0;
+}
+.mainphoto img:hover {
+  filter: none;
+  cursor: pointer;
+}
+
+.sticktip{ 
+	width: 150px;
+	height: 200px;
+	background: transparent;
+ position: absolute;
+ left: 50vw;
+ bottom:-12vw;
+ z-index: 2;
+
+}
+
+.sticktip {
+	cursor: grab;
+}

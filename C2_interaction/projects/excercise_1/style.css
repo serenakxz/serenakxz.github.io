@@ -1,0 +1,56 @@
+body{
+background-color: black;
+color:#B3EFF0;
+font-family: 'Gill Sans', sans-serif;
+}
+iframe {
+    border-width: 0px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+h1,h2{
+text-align: center;
+
+}
+
+h1{
+    font-size: 8em;
+    padding-top:0.3em;
+    padding-bottom: 0.3em;
+}
+
+h2{
+    padding-bottom: 2em;   
+}
+
+.first{
+padding: 0.5em;
+width: 100%;
+display: flex;
+}
+
+.poem{
+top: 16%;
+left: 30%;
+width: 40%;
+height: auto;
+}
+
+.video{
+    width: 40%;
+    height: auto;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+}
+
+.second{
+    padding: 0.5em;
+
+}
+.web{
+   width: 100%;
+   height: 800px;
+}

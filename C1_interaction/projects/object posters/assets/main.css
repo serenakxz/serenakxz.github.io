@@ -1,0 +1,514 @@
+
+/* Style the links inside the navigation bar */
+.container-fluid a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Add a color to the active/current link */
+.container-fluid a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.hoverable{
+  display:inline-block;
+  backface-visibility: hidden;
+  vertical-align: middle;
+  position:relative;
+  box-shadow: 0 0 1px rgba(0,0,0,0);
+  tranform: translateZ(0);
+  transition-duration: .3s;
+  transition-property:transform;
+}
+
+.hoverable:before{
+  position:absolute;
+  pointer-events: none;
+  z-index:-1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height:10px;
+  width:90%;
+  opacity:0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  /* W3C */
+  transition-duration: 0.3s;
+  transition-property: transform, opacity;
+}
+
+.hoverable:hover, .hoverable:active, .hoverable:focus{
+  transform: translateY(-5px);
+}
+.hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+
+
+@keyframes bounce-animation {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.bounce {
+  animation-name: bounce-animation;
+  animation-duration: 2s;
+}
+
+
+
+/*everything below here is just setting up the page, so dont worry about it */
+
+
+@media (min-width: 768px) {
+  .navbar{
+    text-align: center !important;
+    float: none;
+    display: inline-block;
+  }
+}
+
+
+nav {
+  background: none !important;
+  text-transform:uppercase;
+  li {
+    margin-left: 3em;
+    margin-right: 3em;
+    a{
+      transition: .5s color ease-in-out;
+    }
+  }
+}
+
+.page-title {
+  opacity: .75 !important;
+}
+
+/* fossheim.io */
+/* Tutorial: https://fossheim.io/writing/posts/css-polaroid-camera/ */
+
+* {
+  padding: 0vw;
+  margin: 0vw;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  background-image: radial-gradient(#2D2E2E, #2D2E2E);
+
+}
+
+.camera {
+  display: block;
+  width: 100vw;
+  height:100vw;
+  margin-left: auto;
+  margin-right: auto;
+ margin-top: 5vw;
+  position: relative;
+}
+
+.camera .top {
+  display: block;
+  position: relative;
+  width: 90vw;
+  height: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 35px 35px 35px 35px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(243,243,243,0.75),
+    rgba(243,243,243,0) 15% 85%,
+    rgba(243,243,243,0.75)
+  ), 
+  linear-gradient(#F9EBF1, #FEDEEE),
+  linear-gradient(#D9A3BD, #E7BCD1, #EEC7DA, #F9EBF1);
+  background-size: 100%, 100% 3px, 100%;
+  background-repeat: no-repeat;
+  box-shadow: -1px 1px 2px 3px rgba(249,247,248, 0.85) inset;
+}
+
+.camera .top .lens {
+  z-index: 2;
+  position: relative;
+  display: block;
+  width:50vw;
+  height: 50vw;
+  border-radius: 105px;
+  background-color: black;
+  top: 5vw;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  
+  background-image: radial-gradient(transparent, #000000),
+    radial-gradient(rgba(51,53,54,0.4), transparent),
+    radial-gradient(
+      #2A282B 0% 27%, /* dark body 4 */
+      #070508 27.5% 28%, /* dark shadow 4 */
+      #4E4C4F 28.5% 28.6%, /* highlight 3 */
+      #2A282B 28.7% 29.3%, /* dark body 3 */
+      #070508 29.5% 29.8%, /* dark shadow 3 */
+      #4E4C4F 30% 30.5%, /* highlight 2 */
+      #2A282B 30.5% 32.5%, /* dark body 2 */
+      #070508 33% 33.5%, /* dark shadow 2 */
+      #4E4C4F 34% 34.5%, /* highlight 1 */
+      #2A282B 34.5% 36.5%, /* dark body 1 */
+      #070508 37% 37.5%, /* dark shadow 1 */
+      #3D3B40 38% 38.5%, /* shadow 8 */
+      #908E91 39% 39.5%, /* highlight 8 */
+      #3D3B40 40% 40.5%, /* shadow 7 */
+      #908E91 41% 41.5%, /* highlight 7 */
+      #3D3B40 42% 42.5%, /* shadow 6 */
+      #908E91 43% 43.5%, /* highlight 6 */
+      #3D3B40 44% 44.5%, /* shadow 5 */
+      #908E91 45% 45.5%, /* highlight 5 */
+      #3D3B40 46% 46.5%, /* shadow 4 */
+      #908E91 47% 47.5%, /* highlight 4 */
+      #3D3B40 48% 48.5%, /* shadow 3 */
+      #908E91 49% 49.5%, /* highlight 3 */
+      #3D3B40 50% 50.5%, /* shadow 2 */
+      #908E91 51% 51.5%, /* highlight 2 */
+      #3D3B40 52% 52.5%, /* shadow 1 */
+      #908E91 53% 54%, /* highlight 1 */
+      #241E1E 54.5% 57%, /* outer */
+      #131114 57% 59%, /* shadow */
+      #3C3A3D 59% 60%, /* highlight */
+      #241E1E 60% /* outer */
+    );
+  
+  background-size: 50vw, 50vw, 50vw, 50vw, 100%;
+ 
+  background-repeat: no-repeat;
+  box-shadow: 15px 55px 60px 5px #767072;
+  transition: all 0.5s ease;
+}
+
+.camera .top .lens:hover {
+  -webkit-transform: rotate(-360deg) scale(2);
+  transform: rotate(-360deg) scale(2);
+  cursor: pointer;
+}
+
+.camera .top .lens .glass {
+  display: block;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 15vw;
+  background-image: radial-gradient(
+      rgba(119, 109, 80, 0.85),
+      transparent 40%
+    ),
+    radial-gradient(
+      rgba(51,180,105,0.25) 13%, 
+      rgba(119,159,59,0.2) 53% 70%,
+      rgba(119,159,59,0) 68%
+    ),
+    radial-gradient(
+      rgba(51,180,105,0.25) 23%, 
+      rgba(51,180,105,0.2) 53% 70%,
+      rgba(51,180,105,0) 68%
+    ),
+    radial-gradient(
+      #2C1F28,
+      #241921 55%,
+      #080609 70%
+    );
+  background-size: 100%, 190% 100%, 190% 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center -3vw, -9vw -14.4vw, -9vw 16.5vw, center;
+  
+}
+
+.camera .top .lens .glass:hover {
+  border-radius: 30px;
+  width: 200px;
+  height: 150px;
+  background-color: #ffe002;
+  background-image: url(imgs/view.jpg);
+  -webkit-transform: scale(2.25);
+  cursor: pointer;
+}
+
+
+   
+.camera .top .viewfinder {
+  z-index: 1;
+  position: absolute;
+  background-color: #1B1A18;
+  width: 110px;
+  height: 110px;
+  border-radius: 20px;
+  right: 20px;
+  top: 20px;
+  box-shadow: 0.5px 0.5px 1px 1.5px #F1EDEE,
+    1.5px 1px 1px 1px #3B3535 inset,
+    2px 2px 1px 1px #9F9E9C inset,
+    -0.5px -2px 1.5px #9B9A98 inset,
+    1px 1.5px 0.5px 1px #FBF7F8;
+   /* -webkit-transform: rotate(45deg);
+  -webkit-transition: all 1s ease-in-out;*/
+}
+
+
+/*  border-radius: 30px;
+  width: 200px;
+  height: 150px;
+  background-color: #ffe002;
+  -webkit-transform: scale(2.25);
+  cursor: pointer;
+}
+*/
+
+.camera .top .viewfinder .glass {
+  position: absolute;
+  background-color: white;
+  width: 75px;
+  height: 75px;
+  left: 18px;
+  top: 18px;
+  border-radius: 20px;
+  background-image: radial-gradient(rgba(236, 234, 237, 0.3) 50%, transparent 60%),
+    radial-gradient(rgba(193, 189, 186, 0.3) 50%, transparent 60%),
+    radial-gradient(#5B5758 45%, #302C2D, #131112);
+  background-size: 106% 32%, 106% 25%, 100%;
+  background-repeat: no-repeat;
+  background-position: -3px -7px, bottom -8px left -3px, center;
+  box-shadow: 0px 0px 1px 0px #010000 inset,
+    0 0 1px 1px #393836 inset,
+    0 0 2px 2px #010000 inset,
+    0 0 2px 4px #393836 inset,
+    0 0 1.5px 4.5px #010000 inset,
+    -0.5px -1px 1px #5F5E5C,
+    0.25px 2px 2px #464543;
+}
+
+
+.camera .top .viewfinder .glass .back {
+  position: absolute;
+  background-image: url("imgs/view.jpg");
+  width: 40px;
+  height: 40px;
+  left: 18px;
+  top: 19px;
+  border-radius: 10px;
+  box-shadow: 0.5px 2px 2px 0 #5E5B56,
+    0px 1px 3px 0px #CAC4C5,
+    -4px 0px 5px 0px rgba(9,7,5,0.75),
+    1px 1px 1px 1px #F1ECF0 inset,
+    1.5px 1.5px 1px 1px #D1D0CE inset;
+  border: 0.5px solid rgba(9,7,5,0.75);
+}
+
+/*printer*/
+.camera .bottom {
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 20vw;
+  position: relative;
+  border-radius: 11px 11px 30px 30px;
+  background-image: radial-gradient(#F9A3C4 60%, transparent 60%),
+    radial-gradient(#F9A3C4 60%, transparent 60%),
+    linear-gradient(90deg, #F9A3C4, #eae8eb),
+    linear-gradient(90deg, #eae8eb, #F9A3C4),
+    linear-gradient(90deg, #fdddef, rgba(47, 43, 43, 0) 5% 95%, #fdddef),
+    linear-gradient(#56002b, #1f0311),
+    linear-gradient(#f9a3c4, #ffb1da, #e46cae);
+  background-size: 50px 60px, 50px 60px, 185px 30px, 185px 30px, 100% 100%,
+    100% 20px, 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 160px -26px, 360px -26px, top right, top left, top left,
+    bottom left, bottom left;
+  box-shadow: -1px 3px 2px 0px rgba(249, 247, 248, 0.65) inset;
+  animation: filmejection 20s infinite;
+}
+
+@keyframes filmejection {
+    0% { opacity: 1; top: 0vw; }
+   10% { opacity: 1; top: 0vw; }
+    100% { opacity: 1; top: 130vw}
+}
+
+.camera .bottom .printer {
+  position: relative;
+  display: block;
+  width: 80vw;
+  height: 4vw;
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+
+  background-image: linear-gradient(90deg, #474548 90%, #343233 90%),
+    linear-gradient(90deg, #0e090d 10%, #4a4849 10%),
+    linear-gradient(
+      #4c4a4d 4%,
+      #161214 9% 20%,
+      #484445 30% 55%,
+      #1a1617 80% 93%,
+      #b0afad 99%
+    );
+  background-size: 8px 100%, 8px 100%, 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top left, top right;
+}
+
+.camera .bottom .labels .logo {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #56002b;
+  text-align: center;
+  margin-top:8vw;
+}
+
+.cover{
+  top: 5.5vw;
+  position: relative;
+  background: #2D2E2E;
+  width: 100vw;
+  height: 200vw;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+.film{
+  z-index: 1;
+  top: -20vw;
+  display: block;
+  position: relative;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+text-align: center;
+
+}
+
+
+
+/*ARCHIVE*/
+.photos{
+  margin-top: 5vw;
+  padding: 5vw;
+}
+
+.p1{
+  position: relative;
+  left: 0vw;
+  transform: rotate(20deg);
+}
+
+.p2{
+  position: relative;
+  left: 2vw;
+  transform: rotate(-5deg);
+}
+
+.p3{
+  position: relative;
+  left: 4vw;
+  transform: rotate(8deg);
+}
+
+.p4{
+  position: relative;
+  left: 6vw;
+  transform: rotate(15deg);
+}
+
+.p5{
+  position: relative;
+  top: 6vw;
+  left: 0vw;
+  transform: rotate(40deg);
+}
+
+.p6{
+  position: relative;
+  top: 1vw;
+  left: 2vw;
+  transform: rotate(-15deg);
+}
+
+.p7{
+  position: relative;
+   top: 3vw;
+  left: 4vw;
+  transform: rotate(-5deg);
+}
+
+.p8{
+  position: relative;
+   top: 5vw;
+  left: 6vw;
+  transform: rotate(40deg);
+}
+
+a:active {
+ filter: contrast(8%);
+}
+
+a:hover {
+  cursor: pointer;
+}
+a:visited {
+ color: white;
+}
+
+.imgfilters img:hover {
+  filter:drop-shadow(10px 10px 12px black);
+  transform: rotate(0deg);
+  cursor:url(imgs/handcursor.png),auto;
+}
+
+/*
