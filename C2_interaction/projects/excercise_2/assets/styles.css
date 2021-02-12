@@ -1,0 +1,69 @@
+body{
+    font-size: 16px;
+    font-family: monospace;
+}
+
+h1{
+    text-align: center;
+}
+img{
+    width: 30em;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.qtips{
+    display: block;
+    margin-left: 20%;
+    margin-right: auto;
+    color: blue;
+}
+
+.chanel{
+    display: block;
+    margin-left: 10%;
+    margin-right: auto;
+    font-weight: bold;
+    color:black;
+}
+
+.jbl{
+    margin-top: 1em;
+    padding-left: 15%;
+    padding-top: 1em;
+    margin-right: auto;
+    background-color: black;
+}
+.first,.second,.third,.fourth,.fifth,.sixth,.seventh{
+    margin-top: 4em; 
+}
+
+.butter{
+    display: block;
+    margin-left: 20%;
+    margin-right: auto;
+    color:navy;
+}
+
+.ain{
+    display: block;
+    margin-left: 25%;
+    margin-right: auto;
+    color:darkblue; 
+}
+
+.instax{
+    display: block;
+    margin-left: 10%;
+    margin-right: auto; 
+}
+
+.sui{
+    display: block;
+    margin-left: 20%;
+    margin-right: auto;
+    color:red;
+
+}
