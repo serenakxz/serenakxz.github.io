@@ -1,0 +1,78 @@
+body{
+   font-size: 16px;
+   background: #00307A;
+   color: azure;
+}
+
+h1{
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 1em;
+    padding-top: 5em;
+    font-size: 3em;
+    text-align: center;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    padding: 1em;
+    font-size: 1.6em;
+}
+
+img{
+   width: 50%;
+   height: auto;
+}
+
+#flex{
+    display: flex;
+}
+
+a:link {
+    color: rgb(255, 157, 173);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: orange;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+video{
+        width: 50%;
+        height: 600px;
+  }
+
+.content{
+      max-width: 50%;
+  }
+
+.castle{
+      width: 100%;
+  }
+
+.shallow{
+      background: paleturquoise;
+      color:#00307A;
+  }
+
+.dark{
+    background: black;
+  }
+
+.gray{
+      background: rgb(114, 114, 122);
+  }
