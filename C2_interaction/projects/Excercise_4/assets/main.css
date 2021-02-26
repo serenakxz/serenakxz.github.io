@@ -1,0 +1,214 @@
+
+/* The body's font-size is smaller by default */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  margin: 0.5em;
+  background-color: white;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7vw;
+  font-weight: bold;
+  padding: 2vw;
+  color: rgb(0, 167, 167);
+}
+
+.shape {
+  width: 200px;
+  height: 20px;
+  position: relative;
+  display: inline-block;
+  margin-left: 50%;
+  background-color: #ffe002;
+  -webkit-transform: rotate(-45deg);
+  -webkit-transition: all 1s ease-in-out;
+}
+
+.shape:hover {
+  border-radius: 50%;
+  border-top-right-radius: 0;
+  width: 200px;
+  height: 200px;
+  background-color:#c4e1ff;
+  -webkit-transform: scale(1.25);
+  cursor: pointer;
+}
+
+.words span{
+  opacity: 0;
+  width: 100%;
+  margin: 0.5em;
+  position: relative;
+  font-size: 24px;
+}
+
+.words-2 span{
+  animation: animateWords 10s linear infinite 0s;
+}
+
+.words span:nth-child(2) {
+  animation-delay: 1s;
+  color: #e760c2;
+}
+.words span:nth-child(3) {
+  animation-delay: 2s;
+  color: green;
+}
+.words span:nth-child(4) {
+  animation-delay: 3s;
+  color: #e760c2
+}
+.words span:nth-child(5) {
+  animation-delay: 4s;
+  color: green;
+}
+.words span:nth-child(6) {
+  animation-delay: 5s;
+  color: #e760c2;
+}
+
+@keyframes animateWords {
+  0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
+  8% { opacity: 1; height: 60px; }
+  19% { opacity: 1; height: 60px; }
+  25% { opacity: 0; height: 60px; }
+  100% { opacity: 0; }
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 45%;
+  padding: 2vw;
+  position: relative;
+  z-index: 2;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.sidebar{
+  float: right;
+  width: 10%;
+  position: fixed;
+  z-index: 1;
+ 
+  overflow-x: hidden;
+  padding-top: 20px;
+  top: 0;
+  right: 0;
+  height: 100%;
+  }
+
+
+.mug {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    left: 0;
+    filter: none;
+    transition: all 0.5s ease;
+  }
+
+.mug:hover {
+  filter: hue-rotate(90deg);
+  cursor: pointer;
+  -webkit-transform: rotate(-360deg) scale(0.5);
+  transform: rotate(-360deg) scale(0.5);
+}
+
+p{
+  color:black;
+}
+
+
+/* Mobile- makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 90%;
+  }
+  .sidebar,.words,.words-2 {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: 16px; 
+    background-color: #c0f3ff;
+  }
+  .shape {
+    display: none;
+  }
+}
+
+/* Tablet breakpoint */
+@media (min-width: 768px) {
+  body {
+    font-size: 20px; 
+    background-color: #88e9ff;
+  }
+  .sidebar{
+    background-image: url("reflective-water-background.jpg");
+  }
+  .words span{
+    font-size: 30px;
+  }
+}
+
+
+/* Desktop breakpoint */
+@media (min-width: 992px) {
+  body {
+    font-size: 24px; 
+    background-color: #05a5ce;
+  }
+  h1 {
+    color: rgb(195, 255, 255);
+  }
+  p{
+    color: white;
+  }
+  .sidebar{
+    background-image: url("poolwater.jpeg");
+  }
+  .words span{
+    font-size: 36px;
+  }
+}
+
+/* Wide screen breakpoint */
+@media (min-width: 1200px) {
+  body {
+    font-size: 30px;
+    background-color: #007d9c;
+  }
+  h1 {
+    color: rgb(195, 255, 255);
+  }
+  p{
+    color: white;
+  }
+  .sidebar{
+    background-image: url("wind-wave-sea-wave-png-transparent-background-11562942976eumxwhrbcb.png");
+  }
+  .mug{
+    max-width: 1080px;
+    border-radius: 50px;
+  }
+  .words span{
+    font-size: 42px;
+  }
+}
