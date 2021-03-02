@@ -161,7 +161,7 @@ and (orientation: portrait) {
     font-size: 14px;
     padding: 5px 10px;
   }
-
+  .flex{padding:0px;}
   #bgText{
     width: 100%;
 }
@@ -173,6 +173,6 @@ and (orientation: portrait) {
 }
 .button2{
   margin-top: 0% ;
-  margin-left: 80%;
+  margin-left: 70%;
 }
 }
