@@ -129,7 +129,11 @@ button{
     color:#FFFCDF;
   }
 
-  @media only screen and (max-width: 900px) {
+  @media only screen 
+  and (min-device-width: 200px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
    button{
      font-size: 16px;
    }
