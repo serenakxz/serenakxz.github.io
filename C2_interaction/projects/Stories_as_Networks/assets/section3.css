@@ -128,7 +128,7 @@ button{
     color:#FFFCDF;
   }
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 400px) {
     .center{
       left:50%;
     }
