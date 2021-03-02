@@ -134,7 +134,7 @@ z-index: 0;
     transform: rotate(-45deg);
   }
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 400px) {
     #canvas{
       display: none;
     }

@@ -139,7 +139,7 @@ margin-left: 60%;
   font-family: sangBleuRegular;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 300px) {
   p{
     font-size: 14px;
   }
