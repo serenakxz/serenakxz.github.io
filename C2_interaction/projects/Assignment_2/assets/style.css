@@ -190,8 +190,9 @@ li.inline{
       font-size: 40px;
    }
    .box2 { 
-      font-size: 90px;
-      line-height: 90px;
+      font-size: 8vw;
+      line-height: 8vw;
+      text-align: left;
    }
    .content{
       font-size: 24px;
@@ -215,6 +216,7 @@ li.inline{
    .box2 { 
       font-size: 100px;
       line-height: 100px;
+      text-align: right;
    }
    .content{
       font-size: 30px;
