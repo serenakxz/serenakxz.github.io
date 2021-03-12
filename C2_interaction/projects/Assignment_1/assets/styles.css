@@ -54,11 +54,19 @@ img{
 
 .digiarchive{
     padding-top: 3%;
+    display: flex;
+    width: 50%;
+    padding-bottom: 6%;
+    margin-left: 25%;
   }
 
+#original{
+  width: 60%;
+  height:auto;
+}
 blockquote {
     margin: auto;
-    width: 50%;
+    width: 40%;
     padding: 10px;
     margin-bottom: 10%;
 }
