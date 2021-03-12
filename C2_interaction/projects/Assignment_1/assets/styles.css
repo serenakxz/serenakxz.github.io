@@ -119,6 +119,7 @@ thead {
 a{
   background: -webkit-linear-gradient(#e128ff, #ff5151);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.8s ease;
   font-size: 2vw;
@@ -127,6 +128,7 @@ a{
 a:hover { 
   background: -webkit-radial-gradient(#40ff00, #7d81ff, #00ed8a);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
 }
