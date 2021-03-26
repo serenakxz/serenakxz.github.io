@@ -1,8 +1,149 @@
 body{
-    background-color: orange;
+    background-color: rgb(255, 231, 186);
+    
 }
+h1{
+font-family: swear-display, serif;
+font-weight: 400;
+font-style: normal;
+font-size: 15vw;
+text-align: center;
+padding: 0;
+margin: 0;
+margin-bottom: 5%;
+}
+
+button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: brother-xl,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  position: absolute;
+  top: 20vw;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  }
+
+
 ul{
     list-style-type: none; /* Remove bullets */
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margins */
+    font-size: 36px;
+  }
+
+    /* unvisited link */
+a:link {
+    color: rgb(66, 50, 4);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(206, 110, 0);
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
+.content{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: 2px solid black;
+    text-align: left; 
+    margin: 0px auto;
+    width: 90%;
+    margin: auto;
+}
+
+.title{
+writing-mode: vertical-lr;
+text-orientation: mixed;
+padding: 12px;
+font-size: 44px;
+margin: 0cm;
+border-right: 2px solid black;
+font-family: swear-display, serif;
+font-weight: 300;
+font-style: normal;
+text-transform: uppercase; 
+}
+
+.studio,.lab{
+    flex: 1 1 calc(100% / 2);
+padding: 40px;
+padding-top: 0px;
+font-family: brother-xl,sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+h3{
+    font-family: swear-display, serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase; 
+    font-size: 26px;
+
+}
+
+.lab{
+border-left: 2px solid black;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color:black; 
+    background-color: rgba(0, 0, 0, 0.4);
+}
+  
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    font-family: brother-xl,sans-serif;
+font-weight: 400;
+font-style: normal;
+  }
+  
+
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
   }
