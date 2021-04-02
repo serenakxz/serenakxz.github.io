@@ -23,7 +23,6 @@ var albums = [];
 
 // callback function that receives our data
 function gotPageOfAlbums(records, fetchNextPage) {
-  //console.log("gotPageOfAlbums()");
   // add the records from this page to our array
   albums.push(...records);
   // request more pages
@@ -50,7 +49,10 @@ function gotAllAlbums(err) {
 function consoleLogAlbums() {
   //console.log("consoleLogAlbums()");
   albums.forEach(album => {
-    console.log("Albums:", album);
+    //console.log("Albums:", album);
+    console.log( "Album titles:", album.fields.album_title)
+    console.log( "Artist:", album.fields.artist)
+    console.log( "Album Cover:", album.fields.album_artwork[0].url)
   });
 }
 
@@ -68,7 +70,7 @@ function showAlbums() {
      albumImage.classList.add("album-artwork");
      albumImage.src =album.fields.album_artwork[0].url;
      albumContainer.append(albumImage);
-     
+
     // add album titles
     var albumTitle = document.createElement("h2");
     albumTitle.classList.add("album-title");
@@ -85,89 +87,6 @@ function showAlbums() {
 
 });
 }
-//load airtable library
 
-/* var Airtable = require('airtable');
-console.log(Airtable);
-
-//connect to airtable database using api key
-var base = new Airtable({apiKey: 'key2nBLDDv42nqSC4'}).base('appjePsguF6VzZEs6');
-
-//get the 'Class Demo:Music' table from the base
-base('Class Demo:Music').select({
-    // Selecting the first 3 records in Grid view:
-    maxRecords: 3,
-    view: "Grid view"
-}).eachPage(function page(records, fetchNextPage) {
-    // This function (`page`) will get called for each page of records.
-
-    records.forEach(function(record) {
-        console.log('Album Title:', record.get('album_title'));
-    });
-
-    // an empty array to hold our data
-    var albums = [];
-
-    // To fetch the next page of records, call `fetchNextPage`.
-    // If there are more records, `page` will get called again.
-    // If there are no more records, `done` will get called.
-    fetchNextPage();
-
-}, function done(err) {
-    if (err) { console.error(err); return; 
-    }
-
-      // call functions to show the music
-      
-    consoleLogAlbums();
-     showAlbums();
-});
-
-
-//get the 'Class Demo:Music' table from the base
-base('Class Demo:Music').select({
-    // Selecting the first 3 records in Grid view:
-    maxRecords: 3,
-    view: "Grid view"
-}).eachPage(function page(records, fetchNextPage) {
-    // This function (`page`) will get called for each page of records.
-
-    records.forEach(function(record) {
-        console.log('Artist:', record.get('artist'));
-    });
-
-    // To fetch the next page of records, call `fetchNextPage`.
-    // If there are more records, `page` will get called again.
-    // If there are no more records, `done` will get called.
-    fetchNextPage();
-
-}, function done(err) {
-    if (err) { console.error(err); return; }
-});
-
-
-//get the 'Class Demo:Music' table from the base
-base('Class Demo:Music').select({
-    // Selecting the first 3 records in Grid view:
-    maxRecords: 3,
-    view: "Grid view"
-}).eachPage(function page(records, fetchNextPage) {
-    // This function (`page`) will get called for each page of records.
-
-    records.forEach(function(record) {
-        console.log('Album Cover:', record.get('album_artwork'));
-    });
-
-    // To fetch the next page of records, call `fetchNextPage`.
-    // If there are more records, `page` will get called again.
-    // If there are no more records, `done` will get called.
-    fetchNextPage();
-
-}, function done(err) {
-    if (err) { console.error(err); return; }
-
-});
-
-*/
 
   
