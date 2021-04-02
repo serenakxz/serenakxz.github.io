@@ -1,0 +1,33 @@
+h1{
+    color: rgb(105, 105, 189);
+    font-family: 'Dela Gothic One', cursive;
+    text-align: center;
+    padding: 50px;
+}
+
+h2{
+   color: rgb(209, 119, 15);
+   font-family: 'Montserrat', sans-serif;
+   text-align: center;
+}
+
+h3{
+    color: rgb(63, 63, 121);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+ }
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vw; 
+    text-align: center;
+}
+.container{
+display: flex;
+}
+
+.album-container {
+  padding: 20px;
+}
