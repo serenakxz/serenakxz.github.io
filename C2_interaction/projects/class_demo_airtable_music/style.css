@@ -2,7 +2,8 @@ h1{
     color: rgb(105, 105, 189);
     font-family: 'Dela Gothic One', cursive;
     text-align: center;
-    padding: 50px;
+    padding: 20px;
+    font-size: 50px ;
 }
 
 h2{
