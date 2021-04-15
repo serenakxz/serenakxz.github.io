@@ -1,0 +1,401 @@
+@font-face {
+  font-family: Recife Display Trial;
+  src: url(fonts/RecifeDisplayTrialWeb-Black.woff) format("woff"),
+       url(fonts/RecifeDisplayTrialWeb-Black.woff2) format("woff2");
+  src: url(fonts/RecifeDisplayTrialWeb-Regular.woff);
+  src: url(fonts/RecifeDisplayTrialWeb-SemiBold.woff);
+}
+
+body{
+    background-color: rgba(180, 172, 154, 1);
+    font-size: 16px;
+}
+
+.header{
+  padding-bottom: 20px;
+top: 80px;
+position: sticky;
+background-color: rgba(180, 172, 154, 1) ;
+z-index: 9;
+}
+
+.sticky{
+  top:0;
+  background-color: rgba(180, 172, 154, 1) ;
+  width:100%;
+  height: 80px;
+  position: fixed;
+  z-index:10
+}
+.title{
+  
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 50%;
+  top: 10px;
+  text-align: center;
+  font-family: Recife Display Trial;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 18px;
+  text-transform: lowercase;
+  color: #FFFFFF;
+  }
+  
+a{
+  color: white;
+  text-decoration: none;
+}
+button{
+  background: linear-gradient(115.93deg, rgba(255, 255, 255, 0.59) 1.31%, rgba(255, 255, 255, 0.4) 76.19%);
+  box-shadow: 2px 2px 2px -1px rgba(41, 36, 0, 0.7);
+  color:  #395930;
+  border: none;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-transform:uppercase ;
+  backdrop-filter: blur(40px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 15px;
+}
+
+button:hover {
+  color:white;
+  -moz-box-shadow:    inset 0px 2px 2px 1px #313c2e;
+  -webkit-box-shadow: inset 0px 2px 2px 1px #313c2e;
+  box-shadow:         inset 0px 2px 2px 1px #313c2e;
+  background: linear-gradient(115.93deg,rgba(143, 136, 118, 0.9) 1.31%, rgba(153, 147, 130, 0.9) 76.19%);
+}
+.garden-btn{
+  display: none;
+}
+.plant-container{
+    width:150px;
+    height: 150px;
+    display: block; 
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+}
+.plant-container:hover{
+  filter:hue-rotate(90deg);
+  border-radius: 25%;
+}
+
+.plant-container.active{
+  width: 60vw;
+  height:60vw;
+  display: block;
+  background-repeat: no-repeat;
+    background-size: 70vw auto;
+}
+.plant-container.active:hover{
+  filter: none;
+  border-radius: 0%;
+}
+
+.plant-care{
+    display: none;
+    position: relative;
+    font-family: Recife Display Trial;
+    font-style: normal;
+    text-transform: lowercase;
+font-weight: 600;
+font-size: 25px;
+}
+.plant-care.active{ 
+    display: block;
+    padding-left:10px;
+    padding-left:2vw;
+}
+
+.plant-name{
+    display: none;
+    position: relative;
+    font-family: Recife Display Trial;
+    font-style: normal;
+    text-transform: uppercase;
+font-weight: 600;
+font-size: 40px;
+    
+}
+.plant-name.active{ 
+    display: block;
+    padding-left:2vw;
+    
+}
+
+.sun-icon,.water-icon{
+    display: none;
+}
+
+.sun-icon.active{
+    display: block;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.water-icon.active{
+    display: block;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.sun-icon-img,.water-icon-img{
+    display: none;
+    
+}
+
+.sun-icon-img.active,.water-icon-img.active{
+    display: block;
+    position: relative;
+    width:40px;
+    padding-left:2vw;
+}
+
+.sun-icon .sun{
+    visibility: hidden;
+    width: 200px;
+    background-color:  #395930;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+ 
+    position: absolute;
+    top: -5px;
+    left: 8%;
+  }
+
+.sun-icon:hover .sun {
+    visibility: visible;
+  }
+       
+  .water-icon .water{
+    visibility: hidden;
+    width: 200px;
+    background-color: #395930;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+ 
+    position: absolute;
+    top: -45px;
+    left: 8%;
+  }
+  @media(hover: hover) and (pointer: fine) {
+.water-icon:hover .water {
+    visibility: visible;
+  }
+}
+    
+.water{
+   display: none;
+}
+.water.active{ 
+    display: block;         
+    position:relative;
+}
+
+.collect-btn{
+  display: none;
+  position: relative;
+}
+.collect-btn.active{ 
+   display: block;         
+   
+  
+}
+
+
+
+  
+  /* The Close Button */
+  .close {
+    color: #000000;
+    position: relative;
+    
+    font-size: 3vw;
+    font-weight: bold;
+    display: none;
+    
+  }
+  .close.active{
+    display: block;         
+    position:relative;
+   padding-right: 10px;
+    display:inline;
+float:right;
+    
+  }
+  .close:hover,
+  .close:focus {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+  }
+.main{
+  display: flex;
+  margin-top: 20px;
+}
+.filter{
+    font-size: 20px;
+    color: #0d2406;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    display: block;
+    margin-top: 54px;
+    background: linear-gradient(115.93deg, rgba(255, 255, 255, 0.8) 1.31%, rgba(255, 255, 255, 0.4) 76.19%);
+    box-shadow: 5px 5px 5px rgba(57, 89, 48, 0.2);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter:blur(40px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 0px 53px 53px 0px;
+margin-right: 50px;
+padding:10px;
+overflow:inherit;
+}
+
+.grey{
+  color:gray;
+}
+.flex{
+    display: flex;
+    
+}
+
+.flex > span {
+  box-sizing: border-box;
+  margin: 0px 10px 0 0;
+  background: linear-gradient(115.93deg, rgba(255, 255, 255, 0.59) 1.31%, rgba(255, 255, 255, 0.4) 76.19%);
+box-shadow: 3px 3px 2.5px -1px rgba(57, 89, 48, 0.2);
+font-family: Roboto;
+backdrop-filter: blur(40px);
+/* Note: backdrop-filter has minimal browser support */
+padding: 5px;
+border-radius: 5px;
+}
+
+.container{
+
+  padding-top: 54px;
+  
+   display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+      align-content: flex-start; 
+}
+.container > div {
+box-sizing: border-box;
+margin: 10px 10px 0 0;
+
+}
+
+.garden-btn{
+ position: relative;
+ z-index: 2;
+ float: right;
+}
+
+.quiz-btn{
+  display: none;
+ }
+
+ .exit-btn{
+  display: none;
+  position: relative;
+ z-index: 2;
+ float: right;
+ }
+
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .title{
+    font-size: 16px;
+    line-height: 16px;
+    float: left;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .main{
+    display: block;
+  }
+  .filter{
+    border-radius: 0px 0px 53px 53px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 16px;
+    line-height: 16px;
+  }
+button{
+ font-size:16px;
+ padding: 4px 10px;
+}
+  .plant-container{
+    margin: auto;
+    width: 108px;
+    height: 108px;
+    background-size:110px 110px;
+  }
+  .plant-container.active{
+    margin: auto;
+    width: 100vw;
+    height: 100vw;
+    background-size:100vw auto;
+  }
+  .plant-name.active{
+    font-size: 24px;
+    width: 50%;
+    background-color: white;
+    padding-bottom:10px;
+  }
+  .collect-btn{
+    font-size: 12px;
+    color: #FFFFFF;
+    background-color: #313c2e;
+    border-radius: 5px;
+  }
+
+  .plant-care{
+    font-size: 16px;
+    background-color: white;
+    width: 20vw;
+  }
+  .water-icon-img,.sun-icon-img{
+    width: 5px;
+    height: 50%;
+  }
+  .water-icon .water{
+    visibility: visible;
+    left: 14%;
+    
+  }
+  .sun-icon .sun{
+    visibility: visible;
+    left:14%;
+  }
+  .close{
+    font-size: 24px;
+  }
+  .container{
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .filter,.flex{
+    width: 30vw;
+  }
+
+}
