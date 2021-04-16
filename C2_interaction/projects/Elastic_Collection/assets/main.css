@@ -27,6 +27,7 @@ z-index: 9;
   position: fixed;
   z-index:10
 }
+
 .title{
   
   display: block;
@@ -263,7 +264,10 @@ border-radius: 0px 53px 53px 0px;
 margin-right: 50px;
 padding:10px;
 overflow:inherit;
+position: sticky
 }
+
+
 
 .grey{
   color:gray;
@@ -283,6 +287,12 @@ backdrop-filter: blur(40px);
 /* Note: backdrop-filter has minimal browser support */
 padding: 5px;
 border-radius: 5px;
+}
+
+.flex>span:hover{
+  -moz-box-shadow:    inset 0px 1px 1px 0px #313c2e;
+  -webkit-box-shadow: inset 0px 1px 1px 0px #313c2e;
+  box-shadow:         inset 1px 1px 3px 0px #313c2e;
 }
 
 .container{
