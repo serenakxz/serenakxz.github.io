@@ -4,7 +4,7 @@ base('Plants').select({
   .eachPage(gotPageOfPlants, gotAllPlants);
 
 var filterHard = document.querySelector(".js-hard");
-filterHard.style.color = "red";
+filterHard.style.color = "#ff6b00";
 
 var filterEasy = document.querySelector(".js-easy");
 filterEasy.addEventListener("click", function () {

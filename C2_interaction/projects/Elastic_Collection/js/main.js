@@ -215,7 +215,7 @@ function showPlants() {
             plantContainer.classList.add("collected");
             collectBtn.innerHTML = "COLLECTED";
             collectBtn.disabled=true;
-            plantContainer.style.border = "thick solid #395930";
+            plantContainer.style.border = "thick solid #43685E";
             gardenBtn.style.display="block";
         });
 
@@ -293,13 +293,13 @@ function showPlants() {
         // else hide
         var filterIndirect = document.querySelector(".js-indirect");
         filterIndirect.addEventListener("click", function () {
-            document.body.style.backgroundColor="  #8f8570";
-            bar.style.backgroundColor="  #8f8570";
-           header.style.backgroundColor="  #8f8570";
-           filterIndirect.style.color = "red";
+            document.body.style.backgroundColor="  rgb(47 144 113)";
+            bar.style.backgroundColor=" rgb(47 144 113)";
+           header.style.backgroundColor="  rgb(47 144 113)";
+           filterIndirect.style.color = "#ff6b00";
             if (plantContainer.classList.contains("indirect")) {
                 plantContainer.style.display = "block";
-                filterIndirect.style.color = "red";
+                filterIndirect.style.color = "#ff6b00";
                 filterDirect.style.color = "black";
                 filterDappled.style.color = "black";
                 filterLow.style.color = "black";
@@ -321,10 +321,10 @@ function showPlants() {
         // else hide
         var filterDirect = document.querySelector(".js-direct");
         filterDirect.addEventListener("click", function () {
-            document.body.style.backgroundColor="  #C9C0AD";
-            bar.style.backgroundColor="  #C9C0AD";
-           header.style.backgroundColor="  #C9C0AD";
-           filterDirect.style.color = "red";
+            document.body.style.backgroundColor="  rgb(90 210 172)";
+            bar.style.backgroundColor="  rgb(90 210 172)";
+           header.style.backgroundColor="  rgb(90 210 172)";
+           filterDirect.style.color = "#ff6b00";
             if (plantContainer.classList.contains("direct")) {
                 plantContainer.style.display = "block";
                 
@@ -358,10 +358,10 @@ function showPlants() {
         var filterDappled = document.querySelector(".js-dappled");
         var x = document.querySelectorAll('js.dappled').length;
         filterDappled.addEventListener("click", function () {
-            document.body.style.backgroundColor="   #4E483A";
-            bar.style.backgroundColor= "   #4E483A";
-           header.style.backgroundColor="   #4E483A";
-           filterDappled.style.color = "red";
+            document.body.style.backgroundColor="  rgb(17 121 88)";
+            bar.style.backgroundColor= "   rgb(17 121 88)";
+           header.style.backgroundColor="   rgb(17 121 88)";
+           filterDappled.style.color = "#ff6b00";
            filterLow.style.color = "black";
             if (plantContainer.classList.contains("dappled")) {
                 plantContainer.style.display = "block";
@@ -399,10 +399,10 @@ window.onclick = function(event) {
         // else hide
         var filterLow = document.querySelector(".js-low");
         filterLow.addEventListener("click", function () {
-            filterLow.style.color = "red";
-            document.body.style.backgroundColor="   #7C715B";
-            bar.style.backgroundColor= "   #7C715B";
-           header.style.backgroundColor="   #7C715B" ;
+            filterLow.style.color = "#ff6b00";
+            document.body.style.backgroundColor="   rgb(47 144 113)";
+            bar.style.backgroundColor= "   rgb(47 144 113)";
+           header.style.backgroundColor="   rgb(47 144 113)" ;
             if (plantContainer.classList.contains("low")) {
                 plantContainer.style.display = "block";
                 filterDappled.style.color = "black";
@@ -424,10 +424,10 @@ window.onclick = function(event) {
         // else hide
         var filterMedium = document.querySelector(".js-moderate");
         filterMedium.addEventListener("click", function () {
-            document.body.style.backgroundColor="  rgba(180, 172, 154, 1)";
-            bar.style.backgroundColor="  rgba(180, 172, 154, 1)" ;
-           header.style.backgroundColor="rgba(180, 172, 154, 1)" ;
-           filterMedium.style.color = "red";
+            document.body.style.backgroundColor="#35AF88";
+            bar.style.backgroundColor="#35AF88" ;
+           header.style.backgroundColor="#35AF88" ;
+           filterMedium.style.color = "#ff6b00";
             if (plantContainer.classList.contains("moderate")) {
                 plantContainer.style.display = "block";
                 filterDappled.style.color = "black";
@@ -448,10 +448,10 @@ window.onclick = function(event) {
         // else hide
         var filterBright = document.querySelector(".js-bright");
         filterBright.addEventListener("click", function () {
-            document.body.style.backgroundColor="  #DAD0BB";
-            bar.style.backgroundColor="  #DAD0BB" ;
-           header.style.backgroundColor="#DAD0BB" ;
-           filterBright.style.color = "red";
+            document.body.style.backgroundColor="  rgb(90 210 172)";
+            bar.style.backgroundColor="  rgb(90 210 172)" ;
+           header.style.backgroundColor="rgb(90 210 172)" ;
+           filterBright.style.color = "#ff6b00";
             if (plantContainer.classList.contains("bright")) {
                 plantContainer.style.display = "block";
                 filterDappled.style.color = "black";
@@ -481,7 +481,7 @@ window.onclick = function(event) {
         // else hide
         var filter25 = document.querySelector(".js-25");
         filter25.addEventListener("click", function () {
-            filter25.style.color = "red";
+            filter25.style.color = "#ff6b00";
             if (plantContainer.classList.contains("25%")) {
                 plantContainer.style.display = "block";
                 filter50.style.color = "black";
@@ -499,7 +499,7 @@ window.onclick = function(event) {
         // else hide
         var filter50 = document.querySelector(".js-50");
         filter50.addEventListener("click", function () {
-            filter50.style.color = "red";
+            filter50.style.color = "#ff6b00";
 
             if (plantContainer.classList.contains("50%")) {
                 plantContainer.style.display = "block";
@@ -518,7 +518,7 @@ window.onclick = function(event) {
         // else hide
         var filter75 = document.querySelector(".js-75");
         filter75.addEventListener("click", function () {
-            filter75.style.color = "red";
+            filter75.style.color = "#ff6b00";
             if (plantContainer.classList.contains("75%")) {
                 plantContainer.style.display = "block";
                 filter25.style.color = "black";
@@ -536,7 +536,7 @@ window.onclick = function(event) {
         // else hide
         var filter100 = document.querySelector(".js-100");
         filter100.addEventListener("click", function () {
-            filter100.style.color = "red";
+            filter100.style.color = "#ff6b00";
             if (plantContainer.classList.contains("100%")) {
                 plantContainer.style.display = "block";
                 filter25.style.color = "black";
@@ -554,7 +554,7 @@ window.onclick = function(event) {
         // else hide
         var filterExcep = document.querySelector(".js-exceptive");
         filterExcep.addEventListener("click", function () {
-            filterExcep.style.color = "red";
+            filterExcep.style.color = "#ff6b00";
             if (plantContainer.classList.contains("exceptive")) {
                 plantContainer.style.display = "block";
                 filter25.style.color = "black";

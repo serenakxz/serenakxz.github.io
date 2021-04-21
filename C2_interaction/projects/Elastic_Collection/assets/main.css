@@ -6,8 +6,21 @@
   src: url(fonts/RecifeDisplayTrialWeb-SemiBold.woff);
 }
 
+@font-face {
+  font-family: KareliaTrial;
+  src: url(fonts/KareliaTrial-Regular.woff) format("woff"),
+       url(fonts/KareliaTrial-Regular.woff2) format("woff2");
+       font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+  @font-face {
+    font-family: "LetteraText";
+    src: url(fonts/LetteraTextLLWebTrial-RegularTrial.woff) format("woff");
+  }
+
 body{
-    background-color: rgba(180, 172, 154, 1);
+    background-color: #35AF88;
     font-size: 16px;
 }
 
@@ -15,13 +28,13 @@ body{
   padding-bottom: 20px;
 top: 80px;
 position: sticky;
-background-color: rgba(180, 172, 154, 1) ;
+background-color: #35AF88;
 z-index: 9;
 }
 
 .sticky{
   top:0;
-  background-color: rgba(180, 172, 154, 1) ;
+  background-color:#35AF88 ;
   width:100%;
   height: 80px;
   position: fixed;
@@ -59,12 +72,12 @@ button{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-family: "LetteraText", sans-serif;
+  font-weight: normal;
   text-transform:uppercase ;
   backdrop-filter: blur(40px);
   /* Note: backdrop-filter has minimal browser support */
-  border-radius: 15px;
+  border-radius: 8px;
 }
 
 button:hover {
@@ -72,7 +85,6 @@ button:hover {
   -moz-box-shadow:    inset 0px 2px 2px 1px #313c2e;
   -webkit-box-shadow: inset 0px 2px 2px 1px #313c2e;
   box-shadow:         inset 0px 2px 2px 1px #313c2e;
-  background: linear-gradient(115.93deg,rgba(143, 136, 118, 0.9) 1.31%, rgba(153, 147, 130, 0.9) 76.19%);
 }
 .garden-btn{
   display: none;
@@ -251,8 +263,8 @@ float:right;
 .filter{
     font-size: 20px;
     color: #0d2406;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-family: KareliaTrial, sans-serif;
+    font-weight: normal;
     display: block;
     margin-top: 54px;
     background: linear-gradient(115.93deg, rgba(255, 255, 255, 0.8) 1.31%, rgba(255, 255, 255, 0.4) 76.19%);
@@ -282,7 +294,8 @@ position: sticky
   margin: 0px 10px 0 0;
   background: linear-gradient(115.93deg, rgba(255, 255, 255, 0.59) 1.31%, rgba(255, 255, 255, 0.4) 76.19%);
 box-shadow: 3px 3px 2.5px -1px rgba(57, 89, 48, 0.2);
-font-family: Roboto;
+font-family: KareliaTrial, sans-serif;
+font-weight: normal;
 backdrop-filter: blur(40px);
 /* Note: backdrop-filter has minimal browser support */
 padding: 5px;

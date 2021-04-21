@@ -1,5 +1,5 @@
 var filterEasy = document.querySelector(".js-easy");
-filterEasy.style.color = "red";
+filterEasy.style.color = "#ff6b00";
 
 var filterMedium = document.querySelector(".js-medium");
 filterMedium.addEventListener("click", function () {
