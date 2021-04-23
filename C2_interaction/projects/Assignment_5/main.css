@@ -2,7 +2,20 @@ body{
     background-color: cadetblue;
     font-size: 16px;
 }
-
+.button{
+    margin: 0;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+h1,h2,h3{
+    text-align: center;
+}
+.recipe{
+    display: flex;
+}
 img{
     width: 150px;
     display: block;
@@ -10,7 +23,10 @@ img{
   margin-right: auto;
 
 }
-
+#one,#two,#three{
+    width: 33.3%;
+    padding: 10px;
+}
 
 .burger,.pizza{
     text-align: center;
