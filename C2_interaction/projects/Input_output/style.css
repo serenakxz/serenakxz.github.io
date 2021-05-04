@@ -1,0 +1,129 @@
+body{
+    font-family: europa, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color:rgba(0, 0, 0); 
+    color: white;
+    overflow: hidden;
+    }
+    
+    @keyframes blinker {
+      50% { opacity: 0; }
+    }
+    
+    
+    
+    #cursor {
+      animation: blinker 1s step-end infinite;
+      /*you can change 'step-end' to 'linear' for smooth transition*/
+      font-family: 'Exo 2', sans-serif;
+      color: white;
+      font-size: 24px;
+    }
+    
+    #result{
+        font-size: 18px;
+    }
+    #container {
+      width: calc(100% - 100px);
+      padding: 50px;
+      margin: 50px auto;
+      word-wrap: break-word;
+      text-align: center;
+   
+    /*  top:500px;
+      position:relative;*/
+    }
+    
+    .new{
+      display:inline;
+      /* -webkit-filter: blur(35px);
+      -moz-filter: blur(35px);
+      -o-filter: blur(35px);
+      -ms-filter: blur(35px);
+      filter: blur(35px);*/
+      animation:fadein 1s ;
+      -webkit-animation: fadein 1s;
+    }
+    
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    
+    }
+    @-webkit-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    
+    }
+    
+    #image{
+      display: block;
+        padding-top: 50px;
+    }
+    .refer-photo{
+      
+      position: absolute;
+      display: none;
+      margin-top: 50px;
+      z-index: 1;
+      width:425px;
+       height:550px;
+       position: center;
+       left:35%;
+         background-repeat: no-repeat;
+         background-size: contain;
+         opacity: 50%;
+    }
+    .inner {
+position: absolute;
+z-index: 2;
+      margin-top: 50px;
+      width:425px;
+       height:550px;
+      position: center;
+      left:35%;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+.button{
+  display: flex;
+    width: 100px;
+    margin: auto;
+}
+.tab:hover{
+ color: rgb(255, 251, 0);
+}
+.chart{
+  display: none;
+  width: 50%;
+  height: auto;
+  margin: auto;
+}
+  button {
+    padding-left: 50px;
+background-color: transparent;
+border: none;
+
+  }
+      
+      .letter-a {
+        position: center;
+        cursor: pointer;
+      
+      }
+      .letter-a:hover {
+        border: 2px dotted white;
+    }  
+      
+     
+      .letter-b {
+        position: center;
+      }
+      
+      #buttons {
+      padding: 15px 32px;
+      text-align: center;
+      }      
+    
