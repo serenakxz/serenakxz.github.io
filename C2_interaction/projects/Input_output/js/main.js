@@ -62,32 +62,32 @@ img.append(referPhoto);
 function createElement(k) {
 
 
-  if (k == "a" || k == "A") { newElem.style.backgroundImage = `url('img/a.png')`; newElem.classList.add('letter-a');referPhoto.style.backgroundImage = `url('img/abg.png')`; }
-  if (k == "b" || k == "B") { newElem.style.backgroundImage = `url('img/b.png')`; newElem.classList.add('letter-a');referPhoto.style.backgroundImage = `url('img/bbg.png')`;}
-  if (k == "c" || k == "C") { newElem.style.backgroundImage = `url('img/c.png')`; newElem.classList.add('letter-a') ;referPhoto.style.backgroundImage = `url('img/cbg.png')`;}
-  if (k == "d" || k == "D") { newElem.style.backgroundImage = `url('img/d.png')`; newElem.classList.add('letter-b');newElem.classList.remove('letter-a') }
-  if (k == "e" || k == "E") { newElem.style.backgroundImage = `url('img/e.png')`; newElem.classList.add('letter-a');referPhoto.style.backgroundImage = `url('img/ebg.png')`; }
-  if (k == "f" || k == "F") { newElem.style.backgroundImage = `url('img/f.png')`; newElem.classList.add('letter-a');referPhoto.style.backgroundImage = `url('img/fbg.png')`; }
-  if (k == "g" || k == "G") { newElem.style.backgroundImage = `url('img/g.png')`; newElem.classList.add('letter-b') ;newElem.classList.remove('letter-a')}
-  if (k == "h" || k == "H") { newElem.style.backgroundImage = `url('img/h.png')`; newElem.classList.add('letter-b');newElem.classList.remove('letter-a') }
-  if (k == "i" || k == "I") { newElem.style.backgroundImage = `url('img/i.png')`; newElem.classList.add('letter-b') ;newElem.classList.remove('letter-a')}
-  if (k == "j" || k == "J") { newElem.style.backgroundImage = `url('img/j.png')`; newElem.classList.add('letter-a');referPhoto.style.backgroundImage = `url('img/jbg.png')`; }
-  if (k == "k" || k == "K") { newElem.style.backgroundImage = `url('img/k.png')`; newElem.classList.add('letter-a') ;referPhoto.style.backgroundImage = `url('img/kbg.png')`; }
-  if (k == "l" || k == "L") { newElem.style.backgroundImage = `url('img/l.png')`; newElem.classList.add('letter-a');referPhoto.style.backgroundImage = `url('img/lbg.png')`;}
-  if (k == "m" || k == "M") { newElem.style.backgroundImage = `url('img/m.png')`; newElem.classList.add('letter-a');referPhoto.style.backgroundImage = `url('img/mbg.png')`; }
-  if (k == "n" || k == "N") { newElem.style.backgroundImage = `url('img/n.png')`; newElem.classList.add('letter-b') ;newElem.classList.remove('letter-a')}
-  if (k == "o" || k == "O") { newElem.style.backgroundImage = `url('img/o.png')`; newElem.classList.add('letter-b') ;newElem.classList.remove('letter-a')}
-  if (k == "p" || k == "P") { newElem.style.backgroundImage = `url('img/p.png')`; newElem.classList.add('letter-b') ;newElem.classList.remove('letter-a')}
-  if (k == "q" || k == "Q") { newElem.style.backgroundImage = `url('img/q.png')`; newElem.classList.add('letter-b') ;newElem.classList.remove('letter-a')}
-  if (k == "r" || k == "R") { newElem.style.backgroundImage = `url('img/r.png')`; newElem.classList.add('letter-a');referPhoto.style.backgroundImage = `url('img/rbg.png')`; }
-  if (k == "s" || k == "S") { newElem.style.backgroundImage = `url('img/s.png')`; newElem.classList.add('letter-b');newElem.classList.remove('letter-a') }
-  if (k == "t" || k == "T") { newElem.style.backgroundImage = `url('img/t.png')`; newElem.classList.add('letter-a');referPhoto.style.backgroundImage = `url('img/tbg.png')`;  }
-  if (k == "u" || k == "U") { newElem.style.backgroundImage = `url('img/u.png')`; newElem.classList.add('letter-b');newElem.classList.remove('letter-a') }
-  if (k == "v" || k == "V") { newElem.style.backgroundImage = `url('img/v.png')`; newElem.classList.add('letter-a');referPhoto.style.backgroundImage = `url('img/vbg.png')`;  }
-  if (k == "w" || k == "W") { newElem.style.backgroundImage = `url('img/w.png')`; newElem.classList.add('letter-b') ;newElem.classList.remove('letter-a')}
-  if (k == "x" || k == "X") { newElem.style.backgroundImage = `url('img/x.png')`; newElem.classList.add('letter-b');newElem.classList.remove('letter-a') }
-  if (k == "y" || k == "Y") { newElem.style.backgroundImage = `url('img/y.png')`; newElem.classList.add('letter-a');referPhoto.style.backgroundImage = `url('img/ybg.png')`; }
-  if (k == "z" || k == "Z") { newElem.style.backgroundImage = `url('img/z.png')`; newElem.classList.add('letter-b');newElem.classList.remove('letter-a') }
+  if (k == "a" || k == "A") { newElem.style.backgroundImage = `url('img/A.png')`; newElem.classList.add('letter-a');referPhoto.style.backgroundImage = `url('img/abg.png')`; }
+  if (k == "b" || k == "B") { newElem.style.backgroundImage = `url('img/B.png')`; newElem.classList.add('letter-a');referPhoto.style.backgroundImage = `url('img/bbg.png')`;}
+  if (k == "c" || k == "C") { newElem.style.backgroundImage = `url('img/C.png')`; newElem.classList.add('letter-a') ;referPhoto.style.backgroundImage = `url('img/cbg.png')`;}
+  if (k == "d" || k == "D") { newElem.style.backgroundImage = `url('img/D.png')`; newElem.classList.add('letter-b');newElem.classList.remove('letter-a') }
+  if (k == "e" || k == "E") { newElem.style.backgroundImage = `url('img/E.png')`; newElem.classList.add('letter-a');referPhoto.style.backgroundImage = `url('img/ebg.png')`; }
+  if (k == "f" || k == "F") { newElem.style.backgroundImage = `url('img/F.png')`; newElem.classList.add('letter-a');referPhoto.style.backgroundImage = `url('img/fbg.png')`; }
+  if (k == "g" || k == "G") { newElem.style.backgroundImage = `url('img/G.png')`; newElem.classList.add('letter-b') ;newElem.classList.remove('letter-a')}
+  if (k == "h" || k == "H") { newElem.style.backgroundImage = `url('img/H.png')`; newElem.classList.add('letter-b');newElem.classList.remove('letter-a') }
+  if (k == "i" || k == "I") { newElem.style.backgroundImage = `url('img/I.png')`; newElem.classList.add('letter-b') ;newElem.classList.remove('letter-a')}
+  if (k == "j" || k == "J") { newElem.style.backgroundImage = `url('img/J.png')`; newElem.classList.add('letter-a');referPhoto.style.backgroundImage = `url('img/jbg.png')`; }
+  if (k == "k" || k == "K") { newElem.style.backgroundImage = `url('img/K.png')`; newElem.classList.add('letter-a') ;referPhoto.style.backgroundImage = `url('img/kbg.png')`; }
+  if (k == "l" || k == "L") { newElem.style.backgroundImage = `url('img/L.png')`; newElem.classList.add('letter-a');referPhoto.style.backgroundImage = `url('img/lbg.png')`;}
+  if (k == "m" || k == "M") { newElem.style.backgroundImage = `url('img/M.png')`; newElem.classList.add('letter-a');referPhoto.style.backgroundImage = `url('img/mbg.png')`; }
+  if (k == "n" || k == "N") { newElem.style.backgroundImage = `url('img/N.png')`; newElem.classList.add('letter-b') ;newElem.classList.remove('letter-a')}
+  if (k == "o" || k == "O") { newElem.style.backgroundImage = `url('img/O.png')`; newElem.classList.add('letter-b') ;newElem.classList.remove('letter-a')}
+  if (k == "p" || k == "P") { newElem.style.backgroundImage = `url('img/P.png')`; newElem.classList.add('letter-b') ;newElem.classList.remove('letter-a')}
+  if (k == "q" || k == "Q") { newElem.style.backgroundImage = `url('img/Q.png')`; newElem.classList.add('letter-b') ;newElem.classList.remove('letter-a')}
+  if (k == "r" || k == "R") { newElem.style.backgroundImage = `url('img/R.png')`; newElem.classList.add('letter-a');referPhoto.style.backgroundImage = `url('img/rbg.png')`; }
+  if (k == "s" || k == "S") { newElem.style.backgroundImage = `url('img/S.png')`; newElem.classList.add('letter-b');newElem.classList.remove('letter-a') }
+  if (k == "t" || k == "T") { newElem.style.backgroundImage = `url('img/T.png')`; newElem.classList.add('letter-a');referPhoto.style.backgroundImage = `url('img/tbg.png')`;  }
+  if (k == "u" || k == "U") { newElem.style.backgroundImage = `url('img/U.png')`; newElem.classList.add('letter-b');newElem.classList.remove('letter-a') }
+  if (k == "v" || k == "V") { newElem.style.backgroundImage = `url('img/V.png')`; newElem.classList.add('letter-a');referPhoto.style.backgroundImage = `url('img/vbg.png')`;  }
+  if (k == "w" || k == "W") { newElem.style.backgroundImage = `url('img/W.png')`; newElem.classList.add('letter-b') ;newElem.classList.remove('letter-a')}
+  if (k == "x" || k == "X") { newElem.style.backgroundImage = `url('img/X.png')`; newElem.classList.add('letter-b');newElem.classList.remove('letter-a') }
+  if (k == "y" || k == "Y") { newElem.style.backgroundImage = `url('img/Y.png')`; newElem.classList.add('letter-a');referPhoto.style.backgroundImage = `url('img/ybg.png')`; }
+  if (k == "z" || k == "Z") { newElem.style.backgroundImage = `url('img/Z.png')`; newElem.classList.add('letter-b');newElem.classList.remove('letter-a') }
   if (k == " ") { newElem.innerHTML = '&nbsp;' };
 
 }
