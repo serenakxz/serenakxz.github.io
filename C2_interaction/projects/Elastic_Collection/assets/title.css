@@ -37,9 +37,9 @@ color: #FFFFFF;
 }
 
 a{
-  background: linear-gradient(115.93deg, rgba(255, 255, 255, 0.59) 1.31%, rgba(255, 255, 255, 0.4) 76.19%);
-  box-shadow: 4px 4px 4px -1px rgba(41, 36, 0, 0.7);
-  color:  #395930;
+  background: #35AF88 ;
+  border: 3px solid white;
+  color:  white;
   padding: 20px;
   font-family: 'LetteraText', sans-serif;
   text-transform:uppercase ;
@@ -54,10 +54,8 @@ a{
 }
 
 a:hover {
-  color:white;
-  -moz-box-shadow:    inset 0px 2px 2px 1px #313c2e;
-  -webkit-box-shadow: inset 0px 2px 2px 1px #313c2e;
-  box-shadow:         inset 0px 2px 2px 1px #313c2e;
+  color:#35AF88;
+  background: white ;
 }
 
 .container{
