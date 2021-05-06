@@ -4,7 +4,6 @@ body{
     font-style: normal;
     background-color:rgba(0, 0, 0); 
     color: white;
-    overflow: hidden;
     }
     
     @keyframes blinker {
@@ -26,15 +25,20 @@ body{
     }
     #container {
       width: calc(100% - 100px);
-      padding: 50px;
-      margin: 50px auto;
+      padding-left: 0px;
+      margin: 40px auto;
       word-wrap: break-word;
       text-align: center;
    
     /*  top:500px;
       position:relative;*/
     }
-    
+    .intro{
+      display:none ;
+      width:50%;
+      padding: 20px;
+      margin: auto;
+    }
     .new{
       display:inline;
       /* -webkit-filter: blur(35px);
@@ -89,9 +93,13 @@ z-index: 2;
 
 .button{
   display: flex;
-    width: 100px;
+    width: 200px;
     margin: auto;
 }
+
+#tab-two{
+  margin-left: 100px;
+ }
 .tab:hover{
  color: rgb(255, 251, 0);
 }
@@ -101,19 +109,16 @@ z-index: 2;
   height: auto;
   margin: auto;
 }
-  button {
-    padding-left: 50px;
-background-color: transparent;
-border: none;
 
-  }
       
       .letter-a {
         position: center;
         cursor: pointer;
-      
+        width:400px;
+        height:550px;
       }
       .letter-a:hover {
+
         border: 2px dotted white;
     }  
       
