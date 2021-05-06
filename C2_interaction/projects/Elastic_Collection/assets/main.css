@@ -66,7 +66,7 @@ a{
 
 button{
   background: transparent;
-  border: 3px solid white;
+  border: 2px solid white;
   color:  white;
   padding: 5px 15px;
   text-align: center;
@@ -264,10 +264,11 @@ float:right;
   margin-top: 20px;
 }
 .filter{
-    font-size: 20px;
+    font-size: 24px;
     color: #0d2406;
-    font-family: KareliaTrial, sans-serif;
-    font-weight: normal;
+    font-family: mostra-nuova,sans-serif;
+font-weight: 400;
+font-style: normal;
     display: block;
     margin-top: 54px;
     background: linear-gradient(115.93deg, rgba(255, 255, 255, 0.8) 1.31%, rgba(255, 255, 255, 0.4) 76.19%);
@@ -297,8 +298,9 @@ position: sticky
   margin: 0px 10px 0 0;
   background: linear-gradient(115.93deg, rgba(255, 255, 255, 0.59) 1.31%, rgba(255, 255, 255, 0.4) 76.19%);
 
-font-family: KareliaTrial, sans-serif;
-font-weight: normal;
+  font-family: mostra-nuova,sans-serif;
+  font-weight: 400;
+  font-style: normal;
 backdrop-filter: blur(40px);
 /* Note: backdrop-filter has minimal browser support */
 padding: 5px;
@@ -307,7 +309,7 @@ border-radius: 5px;
 
 .flex>span:hover{
   background: linear-gradient(115.93deg, rgba(114, 255, 189, 0.59) 1.31%, rgba(0, 255, 145, 0.4) 76.19%);
-color:white;
+  box-shadow: 0 0 8px #ffffff, 0 0 5px #defeff;
 }
 
 .container{
