@@ -1,0 +1,231 @@
+body{
+background: #005bc7;
+}
+
+@font-face {
+    font-family: Walsheim;
+    src: url(GT-Walsheim-Light-Trial.otf);
+  }
+audio{
+    width:450px;
+    height:30px;
+    opacity: 50%;
+    padding-top: 20px;
+    float: right;
+}
+.title{
+font-family: gopher, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 40pt;
+display: inline;
+color:#FFFCF2;
+}
+.navi{
+    z-index: 500;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+  }
+  .floating-button-menu {
+    margin: 20px;
+    cursor: pointer;
+    background: #FFFCF2;
+    border-radius: 50%;
+    min-width: 80px;
+    max-width: 0px;
+    min-height: 80px;
+    max-height: 0px;
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.6);
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .floating-button-menu:hover {
+    background: #487fc3;
+  }
+  
+  .floating-button-menu .floating-button-menu-label {
+    text-align: center;
+    margin-top: 18px;
+  }
+  
+  .menu-icon{
+    height: 45px;
+    width: 45px;
+  }
+.icon{
+    width: 50px;
+    height:50px; 
+    box-sizing: border-box;
+}
+.icon:hover{
+    border-color: #FFFCF2;
+    border-radius: 10px;
+    border-style: solid;
+  border-width: 5px;
+
+}
+.back{
+    display: inline;
+padding:20px;
+padding-top: 40px;
+}
+
+.caption{
+    display: inline-block;
+    padding-left:20px ;
+    color:#FFFCF2;
+    font-size: 10pt;
+    width: 300px;
+    font-family: Walsheim;
+  }
+.container{
+    color:#FFFCF2;
+    font-family: gopher, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 24pt;
+}
+
+#intro{
+    font-size: 16pt;
+    font-family: Walsheim;
+}
+textarea{
+ width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #FFFCF2;
+  border-radius: 10px;
+  background-color: #005bc7;
+  font-size: 16px;
+  resize: none;
+  color: #FFFCF2;
+  font-family: gopher, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 16pt ;
+font-family: Walsheim;
+}
+::placeholder {
+    color: rgb(144, 147, 189);
+}
+.container{
+    display: flex;
+    justify-content: left;
+    flex-direction: row ;
+    padding-top: 50px;
+    padding-left:30px ;
+}
+#number{
+    width:5vw;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width:40vw;
+    margin-right: 100px;
+}
+
+#intro, .box, .button{
+    padding-top: 50px;
+}
+
+.box{
+    display: none;
+}
+
+#box1{
+display: block;
+}
+button{
+    background-color: #005bc7;
+    border: 2px solid #FFFCF2;
+    color:#FFFCF2;
+    font-size: 16pt;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    float: right;
+    border-radius: 10px;
+}
+.button{
+   display: none;
+}
+
+#button1{
+    display: block;
+}
+
+#button6{
+    width:100px;
+    margin: 0 auto;
+    padding-bottom: 200px;
+    padding-top: 80px;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+justify-content: space-between;
+}
+
+@media only screen and (max-width:768px) {
+    .title{
+        font-size : 18pt;
+    }
+    .icon {
+     width: 30px;
+     height: 30px;
+   }
+   
+   .back {
+         display: inline;
+         padding: 2px;
+         padding-top: 4px；
+   }
+   .navi{
+    z-index: 500;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 680px;
+    left: 58px;
+  }
+  .caption{
+      display: none;
+  }
+  .container{
+      display: block;
+  }
+  .container{
+    color:#FFFCF2;
+    font-family: gopher, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 18pt;
+padding-top: 30px;
+}
+#intro{
+font-size: 12pt;
+width: 100%;
+}
+.content{
+ width: 95%;
+}
+textarea{
+    font-size: 16px;
+    height:150px;
+ }
+#intro, .box,.button{
+    padding-top:30px;
+ }
+.list{
+    font-size: 14px;
+}
+button{
+    font-size: 18px;
+}
+}
