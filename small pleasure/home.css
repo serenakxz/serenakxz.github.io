@@ -1,0 +1,28 @@
+.portrait {
+    width: 20vw;
+}
+
+.landscape{
+    width: 40vw;
+}
+
+.square{
+    width: 30vw;
+}
+
+img{
+    filter: saturate(8);
+    -webkit-filter: sepia(10%) hue-rotate(30deg);
+}
+
+#headline{
+font-family: gopher, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 64pt;
+color: #005BC7;
+position: fixed;
+z-index: 100;
+padding-left: 5vw;
+padding-top: 2vw;
+}
