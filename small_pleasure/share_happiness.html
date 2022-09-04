@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Share your happiness</title>
+    <link rel="stylesheet" href="https://use.typekit.net/cwd6bsx.css">
+    <link href="share.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top">
+        <a href="index.html" class="back"><img src="imgs/back-blue.png" class="icon"></a>
+        <h1 class="title">Share the small pleasures</h1>
+    </div>
+    <div class="navi">
+        <div class="floating-button-menu">
+            <div class="floating-button-menu-label"><a href="journal.html"><img src="imgs/journal.png"
+                        class="menu-icon"></a></div>
+        </div>
+        <div class="floating-button-menu">
+            <div class="floating-button-menu-label"><a href="tips.html"><img src="imgs/tips.png" class="menu-icon"></a>
+            </div>
+        </div>
+    </div>
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <div class="main">
+        <div class="upload">
+            <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add
+                Image</button>
+
+            <div class="image-upload-wrap">
+                <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                <div class="drag-text">
+                    <img id="upload-icon" src="imgs/upload.png">
+                    <div id="drag-intro">Drag and drop a file or select add Image</div>
+                </div>
+            </div>
+            <div class="file-upload-content">
+                <img class="file-upload-image" src="#" alt="your image" />
+                <div class="image-title-wrap">
+                    <button type="button" onclick="removeUpload()" class="remove-image">Remove <span
+                            class="image-title">Uploaded Image</span></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="upload">
+            <input type="file" id="image_input">
+            <div id="display_image"></div>
+            <img id="upload-icon" src="imgs/upload.png">
+            <div class="text">Drag Image to Upload</div>
+            <div class="text">Or</div>
+            <div class="button" id="button1"><button>Select an Image</button></div>
+        </div> -->
+        <div class="post">
+            <textarea name="Text1" cols="50" rows="5"
+                placeholder="Share the small pleasures in your life..."></textarea>
+        </div>
+    </div>
+    <div class="center"><div id="button2"><button>Post them!</button></div></div>
+    <script src="share.js"></script>
+</body>
+
+</html>

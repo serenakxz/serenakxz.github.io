@@ -1,0 +1,162 @@
+@font-face {
+    font-family:sangBleuRegular;
+    src: url(fonts/SangBleuOGSans-Regular-WebTrial.eot);
+    src: url(fonts/SangBleuOGSans-Regular-WebTrial.woff);
+    src: url(fonts/SangBleuOGSans-Regular-WebTrial.woff2);
+  }
+
+body{
+font-size: 16px;
+background:#5C544A;
+}
+/*
+#grad1 {
+    height:800px;  
+    background: #FFFCDF;   
+}
+#grad2 {
+    height:2200px;  
+    background: #5C544A;   
+    background-image: linear-gradient(#FFFCDF,#5C544A)
+}
+#grad3 {
+    height:800px;  
+    background:#5C544A;   
+}
+*/
+.hint_web{
+  position: absolute;
+  z-index: 3;
+  font-family:sangBleuRegular; 
+  top:45%;
+  right:45%;
+  font-size: 1em;
+  text-align:center;
+  color:#5C544A;
+}
+.button{
+  position: absolute;
+  z-index: 3;
+  background-color:#FFFCDF;
+  color:#5C544A;
+  font-size: 20px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-family:sangBleuRegular;
+  display: inline-block;
+  top:53%;
+  left:20%;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+#start{
+  background-color:transparent;
+  color:#FFFCDF;
+}
+
+.header{
+position: absolute;
+font-family:sangBleuRegular; 
+font-style: normal;
+font-weight: normal;
+font-size: 18vw;
+line-height: 100%;
+color: #FFFFFF;
+padding: 0%;
+z-index: 0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 102px;
+  }
+
+#canvas{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%; 
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+  }
+  .circle{
+    border:10px solid #FFFCDF;
+    border-radius: 50%;
+    height: 7em;
+    width: 7em;
+  }
+
+  .icon {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+  }
+  
+  .arrow {
+    position: absolute;
+    z-index: 3;
+    top: 60px;
+    width: 90%;
+    height: 10px;
+    background-color: #FFFCDF;;
+    animation: arrow 700ms linear infinite;
+  }
+  
+  .arrow::after, .arrow::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 10px;
+    right: -8px;
+    background-color: #FFFCDF;
+  }
+  
+  .arrow::after {
+    top: -12px;
+    transform: rotate(45deg);
+  }
+  
+  .arrow::before {
+    top: 12px;
+    transform: rotate(-45deg);
+  }
+
+  @media only screen and (max-width: 860px) { 
+    #canvas{
+      display: none;
+    }
+    .hint_web{
+      display: none;
+    }
+    .header{
+      width: 100%;
+      color: #5C544A;
+      background-color: #FFFCDF;
+      margin: 0%;
+    }
+    .button{
+      position: absolute;
+      font-size: 16px;
+      left: 0%;
+      top:300px;
+    }
+  }

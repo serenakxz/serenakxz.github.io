@@ -1,0 +1,206 @@
+body{
+    background-color: rgb(254, 255, 252);
+    
+}
+.header{
+padding: 20px;
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+h1{
+font-family: brother-xl,sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 16pt;
+text-align: center;
+padding: 0;
+margin: 0;
+margin-bottom: 5%;
+}
+
+a {
+  text-decoration: none;   
+}
+
+a h2:hover{
+ color:#5f5f5f;
+}
+h2{
+  color: black;
+  font-family: brother-xl,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 12pt;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5%;
+}
+.intro{
+    font-family: brother-xl,sans-serif;
+    font-style: normal; 
+    font-weight: 400;
+    padding: 20px;
+  display: flex;
+  flex-direction:row;
+  
+}
+
+#title{
+    font-size: 22pt;
+}
+
+#brief{
+    font-size: 16pt;
+}
+
+h2{
+  height: 100%;
+}
+p{
+    width: 50%;
+   margin: 0px;
+}
+
+.web{
+    padding: 20px;
+    padding-top: 40px;
+}
+ul {
+    font-size: 0;
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 10vh;
+  }
+  ul li {
+    background: #A9A9A9;
+    display:inline-block;
+    width: 45%;
+    margin-right:5%;
+    margin-bottom: 5vh;
+  }
+  ul li:hover {
+    background: #cbcbcb;
+    margin-right:5%;
+  }
+  ul li img {
+    opacity: 1;
+    width: 100%;
+  }
+
+  ul li img:hover {
+    opacity: 0.6;
+    width: 100%;
+  }
+
+  ul li.elastic {
+    background:none;
+   
+  }
+  ul li.elastic img:hover {
+    background: #b9caba;
+  }
+
+  ul li.input {
+    background:none;
+    float: left;
+  }
+  ul li.input img:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  ul li.musical {
+    background:none;
+    float: left;
+  }
+  ul li.musical img:hover {
+    background: #c7c6a9;
+  }
+
+  ul li.happier {
+    background:none;
+  }
+
+  ul li.happier img:hover {
+    background: rgba(193, 190, 155, 0.3);
+  }
+
+  ul li.editorial {
+    background:none;
+    float: left;
+
+  }
+  ul li.editorial img:hover {
+    background: #cbcbcb;
+  }
+
+  ul li.story {
+    background: #ffffff;
+  }
+  ul li.story img:hover {
+    background: rgba(121, 57, 169, 0.3);
+  }
+
+  ul li.shadow {
+    background:none;
+  }
+  ul li.story img:hover {
+    background: rgba(249, 241, 255, 0.3);
+  }
+
+  @media (max-width: 640px) {
+    ul li {
+      width: 100%;
+    }
+
+
+    h1{
+      font-size: 12pt;}
+
+      #title{
+        font-size: 18pt;
+    }
+    
+    #brief{
+        font-size: 12pt;
+    }
+
+    .intro{
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    p{
+      width: 100%;
+     margin-bottom: 10px;
+  }
+  .web{
+    padding: 20px;
+}
+
+ul {
+  font-size: 0;
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 0vh;
+}
+  }
+
+
+@media only screen 
+and (max-device-width: 834px) 
+ {
+    h1{
+      font-size: 14pt;}
+
+      #title{
+        font-size: 20pt;
+    }
+    
+    #brief{
+        font-size: 14pt;
+    }
+
+
+}

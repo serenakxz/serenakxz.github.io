@@ -1,0 +1,138 @@
+body{
+    font-family: europa, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color:rgba(0, 0, 0); 
+    color: white;
+    }
+    
+    @keyframes blinker {
+      50% { opacity: 0; }
+    }
+    
+    
+    
+    #cursor {
+      animation: blinker 1s step-end infinite;
+      /*you can change 'step-end' to 'linear' for smooth transition*/
+      font-family: 'Exo 2', sans-serif;
+      color: white;
+      font-size: 24px;
+    }
+    
+    #result{
+        font-size: 18px;
+    }
+    #container {
+      width: calc(100% - 100px);
+      padding-left: 0px;
+      margin: 40px auto;
+      word-wrap: break-word;
+      text-align: center;
+   
+    /*  top:500px;
+      position:relative;*/
+    }
+    .intro{
+      display:none ;
+      width:50%;
+      padding: 20px;
+      margin: auto;
+    }
+    .new{
+      display:inline;
+      /* -webkit-filter: blur(35px);
+      -moz-filter: blur(35px);
+      -o-filter: blur(35px);
+      -ms-filter: blur(35px);
+      filter: blur(35px);*/
+      animation:fadein 1s ;
+      -webkit-animation: fadein 1s;
+    }
+    
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    
+    }
+    @-webkit-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    
+    }
+    
+    #image{
+      display: block;
+        padding-top: 50px;
+    }
+    .refer-photo{
+      
+      position: absolute;
+      display: none;
+      margin-top: 50px;
+      z-index: 1;
+      width:425px;
+       height:550px;
+       position: center;
+       left:35%;
+         background-repeat: no-repeat;
+         background-size: contain;
+         opacity: 50%;
+    }
+    .inner {
+position: absolute;
+z-index: 2;
+      margin-top: 50px;
+      width:425px;
+       height:550px;
+      position: center;
+      left:35%;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+.button{
+  display: flex;
+    width: 200px;
+    margin: auto;
+}
+
+#tab-two{
+  margin-left: 100px;
+ }
+.tab:hover{
+ color: rgb(191, 215, 181);
+} 
+.chart{
+  display: none;
+  width: 50%;
+  height: auto;
+  margin: auto;
+}
+
+      
+      .letter-a {
+        position: center;
+        cursor: pointer;
+        width:400px;
+        height:550px;
+      }
+ 
+     
+      .letter-b {
+        position: center;
+      }
+      
+      #buttons {
+      padding: 15px 32px;
+      text-align: center;
+      }      
+
+   #hint{
+    padding: 10px;
+    margin: auto;
+    width:50%;
+    text-align: center;
+    display: none;
+    color: rgb(90, 90, 90);
+   }

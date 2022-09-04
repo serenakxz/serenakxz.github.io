@@ -1,3 +1,5 @@
+console.log("hello");
+
 // Get the modal
 var modal = document.getElementById("myModal"),innerHTML = "My First JavaScript";
 

@@ -274,12 +274,14 @@ button {
   font: 2.5vw Gill Sans;
   cursor: pointer;
 }
-
+#myModal{
+  display: none;
+}
 .modal-content {
   position: fixed;
   bottom: 0;
-  background-color: #fefefe;
-  width: 100%;
+  background-color: #F2C94C;
+  width: 99%;
   -webkit-animation-name: slideIn;
   -webkit-animation-duration: 0.4s;
   animation-name: slideIn;
@@ -288,7 +290,7 @@ button {
 
 /* The Close Button */
 .close {
-  color: white;
+  color: rgb(0, 0, 0);
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -296,13 +298,16 @@ button {
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: rgb(133, 133, 133);
   text-decoration: none;
   cursor: pointer;
 }
 
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+  font: 1.5vw Gill Sans;
+  color: black;
+  padding: 2px 16px;}
 
 
 
@@ -324,4 +329,4 @@ button {
 
 @keyframes fadeIn {
   from {opacity: 0} 
-  to {opacity: 1}
+  to {opacity: 1}}

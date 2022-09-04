@@ -1,0 +1,92 @@
+body{
+   background-color: #d762a1; 
+}
+
+.title{
+    text-align: center;
+    height: 800px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    flex-direction: column;
+}
+
+h1{
+    font-family: 'Ma Shan Zheng', cursive;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 120pt;
+    margin: 0;
+    padding: 30pt;
+}
+
+h2{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-size: 50pt;
+    margin: 0;
+    padding: 10pt;
+}
+
+  .triangle {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #fb2c97 0%, #d762a1 100%);
+    transition: all 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    flex-direction: column;
+  }
+
+  .triangle.left {
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  }
+  .triangle.right {
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+  }
+  
+  button {
+    position: absolute;
+    font-family: 'Ma Shan Zheng', cursive;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    z-index: 10;
+    bottom: 100px;
+    left: calc(50% - 60px);
+    width: 120px;
+    height: 50px;
+    border: 0;
+    box-shadow: 2px 1px 20px 0 rgba(103, 75, 100, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+    background: #fff;
+    font-size: 1em;
+    color: #09203f;
+    transition: all 0.8s cubic-bezier(0.645, 0.045, 0.355, 1), transform 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955), box-shadow 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    overflow: hidden;
+  }
+  button:hover {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+  }
+  button:focus {
+    outline: 0;
+  }
+  button:before, button:after {
+    transition: all 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+    top: 17px;
+    position: absolute;
+  }
+  button:before {
+    opacity: 1;
+    left: 53px;
+  }
+  button:after {
+    opacity: 0;
+    left: 0;
+  }
+  
