@@ -1,67 +1,108 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Time Perception</title>
-<link rel="stylesheet" href="main.css">
-<link href="dist/nouislider.min.css" rel="stylesheet">
-<script src="dist/nouislider.js"></script>
+  <title>Time Perception</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="dist/nouislider.min.css" rel="stylesheet">
+  <script src="dist/nouislider.js"></script>
 </head>
+
 <body>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <p>Have you ever wonder what influence your subjective percpetion of time? Learn about it now!</p>
+    <button id="myBtn">Ready to Start</button>
+  </div>
 
-
-
- 
-<main class="container">
-    <div class="age">
-      <h1 class="demo-text">YOUNG</h1> 
-      <div class="vl"></div>
-      <h1 class="demo-text-reverse">ELDERLY</h1>
-    </div>
-    <div class="controls">
-      <!-- Weight Controls -->
-
-      <div class="slider-container">
-
-        <input type="range" min="100" max="1000" value="550" class="slider" id="text-weight" name="text-weight" data-index="0" onclick="changeRate()">
-        <div class="slider-controls">
-          <label for="text-weight" class="slider-label">
-           <span class="output" data-index="0"></span>   
-          </label>
-          <button class="button" data-index="0">
-            Reset
-          </button>
-        </div>
-      </div>
-
-            <div class="speedcontrolcontainer">
-                 <!--
-                <input class="slider" type="range" id="pbrate" min=.5 max=3 value=1 step=.1  data-index="3">
-                <div class="slider-controls">
-                <label class="slider-label" for="pbrate">
-                <span class="output" data-index="3"></span> 
-              </label>
-              <button class="button" data-index="3">
-                Reset
-              </button>
+</div>
+  <main class="container">
+    <div class="wrapper">
+      <header class="header">
+        <div class="age">
+          <h1 class="demo-text">YOUNG</h1>
+          <div class="controls">
+            <div class="slider-container">
+              <input type="range" min="100" max="1000" value="550" class="slider" id="text-weight" name="text-weight"
+                data-index="0" onclick="changeRate()">
+              <div class="slider-controls">
+                <label for="text-weight" class="slider-label">
+                  <span class="output" data-index="0"></span>
+                </label>
               </div>
-                    -->
-              <audio id="audio" src="ticking_clock.wav" loop="true" autoplay="true" controls>    <p>If you are reading this, it is because your browser does not support the audio element.</p>
+            </div>
+  
+            <div class="speedcontrolcontainer">
+              <audio id="audio" src="ticking_clock.wav" loop="true" autoplay="true" controls>
+                <p>If you are reading this, it is because your browser does not support the audio element.</p>
               </audio>
               <p>Time Perception Rate <span id="currentPbr">1</span></p>
             </div>
+          </div>
+          <h1 class="demo-text-reverse">ELDERLY</h1>
+        </div>
+
+      </header>
+     
+      <aside class="aside aside-1">
+        <div class="focus">
+          <h1 id="focus">FOCUS</h1>
+        </div>
+       
+        <div class="slider-container">
+          <div class="slider-controls">
+          <input type="range" min="10" max="100" value="10" class="slider2" id="myRange" onclick="changeRateTwo()">
+          </div>
+        </div>
+
+        <div class="speedcontrolcontainer">
+          <audio id="focus-audio" src="focus.wav" loop="true" autoplay="true" controls>
+            <p>If you are reading this, it is because your browser does not support the audio element.</p>
+          </audio>
+          <p>Time Perception Rate <span id="currentPbrTwo">1</span></p>
+        </div>
       
+      </aside>
+
+      <article class="main">
+<h1>implusivity</h1>
+<h1>implusivity</h1>
+<h1>implusivity</h1>
+      </article>
+
+      <footer class="footer">
+        <div class="novel">
+          <h1 class="novel-text">TYPICAL</h1>
+          <div class="controls">
+
+            <div class="slider-container">
+ 
+              <input type="range" min="25" max="151" value="88" class="slider3" id="text-width" name="text-width"
+                data-index="1"  onclick="changeRateThree()" >
+             
+               <div class="slider-controls">
+                <label for="text-width" class="slider-label">
+                  <span class="output" data-index="1"></span>
+                </label>
+              </div>
+            </div>
+  
+            <div class="speedcontrolcontainer">
+              <audio id="audio" src="ticking_clock.wav" loop="true" autoplay="true" controls>
+                <p>If you are reading this, it is because your browser does not support the audio element.</p>
+              </audio>
+              <p>Time Perception Rate <span id="currentPbr">1</span></p>
+            </div>
+          </div>
+          <h1 class="novel-text-reverse">NOVEL</h1>
+        </div>
+        
+      </footer>
+  
     </div>
-
-    <nav class="paginate-container" aria-label="Pagination">
-      <div class="pagination">
-          <a class="next_page" href="page_three.html" aria-label="Next Page">
-              Next
-          </a>
-      </div>
-  </nav>
-
   </main>
 
   <script src="main.js"></script>
 </body>
+
 </html>
